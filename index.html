@@ -2569,6 +2569,19 @@ async function muatPengumumanSheet(){
     }
   }catch(e){ console.warn("Google Sheets pengumuman tidak tersedia; memakai data lokal.",e); }
 }
+function daftar(v){return String(v||"").split(/\r?\n|\s*;\s*/).map(x=>x.trim()).filter(Boolean)}
+function golongan(v){const x=String(v||"").toLowerCase(); if(/semua|s\/g|g\/|t\/|d\//.test(x)) return ["siaga","penggalang","penegak","pandega"]; return ["siaga","penggalang","penegak","pandega"].filter((n,i)=>x.includes(["s","g","t","d"][i]));}
+async function muatJadwalSheet(){
+  const url=window.BUKU_SAKU?.sheets?.jadwal; if(!url) return;
+  try{
+    const res=await fetch(url,{cache:"no-store"}); if(!res.ok) throw new Error("HTTP "+res.status);
+    const rows=csvBaris(await res.text()); const head=(rows.shift()||[]).map(x=>x.trim().toLowerCase());
+    const data=rows.map(r=>Object.fromEntries(head.map((h,i)=>[h,(r[i]||"").trim()]))).filter(x=>!/^(tidak|no|false|0)$/i.test(x.tampil||""));
+    const urut=["24","25","26","27"], nama=["Registrasi","Jumat 25 Sep","Sabtu 26 Sep","Minggu 27 Sep"];
+    const baru=urut.map((hari,i)=>({hari:nama[i],tanggal:nama[i],sesi:data.filter(x=>String(x.hari).trim()===hari).map(x=>({j:x.waktu,n:x.kegiatan,g:golongan(x.golongan),t:x.lokasi||"-",status:x.status||"normal",catatan:x.catatan||"",pic:x.pic||"",cp:x.cp||"",bawa:daftar(x.bawa),petunjuk:daftar(x.petunjuk),langkah:daftar(x.langkah),perhatian:daftar(x.perhatian),durasi:x.durasi||""}))})).filter(x=>x.sesi.length);
+    if(baru.length){ jadwal=baru; render(); }
+  }catch(e){ console.warn("Google Sheets jadwal tidak tersedia; memakai jadwal lokal.",e); }
+}
 function renderPengumuman(){
   const box=document.getElementById("pengumuman"); if(!box) return;
   if(!pengumuman.length){box.hidden=true;box.innerHTML="";return}
@@ -2580,7 +2593,9 @@ function tampilkanToast(){}
 
 render();
 muatPengumumanSheet();
+muatJadwalSheet();
 if(window.BUKU_SAKU?.pollingMs) setInterval(muatPengumumanSheet, window.BUKU_SAKU.pollingMs);
+if(window.BUKU_SAKU?.pollingMs) setInterval(muatJadwalSheet, window.BUKU_SAKU.pollingMs);
 if("serviceWorker" in navigator){
   window.addEventListener("load", ()=>{
     if(location.hostname === "localhost" || location.hostname === "127.0.0.1"){
