@@ -2581,7 +2581,7 @@ async function muatJadwalSheet(){
     const rows=csvBaris(await res.text()); const head=(rows.shift()||[]).map(x=>x.trim().toLowerCase());
     const data=rows.map(r=>Object.fromEntries(head.map((h,i)=>[h,(r[i]||"").trim()]))).filter(x=>!/^(tidak|no|false|0)$/i.test(x.tampil||""));
     const urut=["24","1","2","3"], nama=["Registrasi","Jumat 25 Sep","Sabtu 26 Sep","Minggu 27 Sep"];
-    const baru=urut.map((hari,i)=>({hari:nama[i],tanggal:nama[i],sesi:data.filter(x=>String(x.hari).trim()===hari).map(x=>({j:x.waktu,n:x.kegiatan,g:golongan(x.golongan),t:x.lokasi||"-",status:x.status||"normal",catatan:x.catatan||"",pic:x.pic||"",cp:x.cp||"",bawa:daftar(x.bawa),petunjuk:daftar(x.petunjuk),langkah:daftar(x.langkah),perhatian:daftar(x.perhatian),durasi:x.durasi||""}))})).filter(x=>x.sesi.length);
+    const baru=urut.map((hari,i)=>({hari:nama[i],tanggal:nama[i],sesi:data.filter(x=>String(x.hari).trim()===hari).map(x=>({j:x.waktu,n:x.kegiatan,g:golongan(x.golongan),t:x.lokasi||"-",status:x.status||"normal",catatan:x.catatan||"",pic:x.pic||"",cp:x.cp||"",bawa:daftar(x.bawa),petunjuk:daftar(x.petunjuk),langkah:daftar(x.langkah),perhatian:daftar(x.perhatian),kunci:daftar(x.perhatian).join(" "),d:x.durasi||"-",durasi:x.durasi||"-",pesertaText:x.peserta||"",pakaian:x.pakaian||"",anggota:x.anggota||"DKR Wawotobi"}))})).filter(x=>x.sesi.length);
     if(baru.length){ const kj=JSON.stringify(baru); const berubah=kj!==kunciJadwal; jadwal=baru; kunciJadwal=kj; render(); if(berubah && kunciJadwal!="") tampilkanToast("Jadwal kegiatan diperbarui"); }
   }catch(e){ console.warn("Google Sheets jadwal tidak tersedia; memakai jadwal lokal.",e); }
 }
