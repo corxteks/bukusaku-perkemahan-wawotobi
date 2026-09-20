@@ -14,6 +14,8 @@ const CORE_ASSETS = [
   "./qrcode-booklet-perkemahan.png"
   ,"./maskot-anoa-anim.webp"
   ,"./maskot-anoa-chromakey.webm"
+  ,"./maskot-anoa-clean.gif"
+  ,"./maskot-anoa-final.png"
   ,"./narasi/sampul.mp3","./narasi/tema.mp3","./narasi/foto.mp3","./narasi/kepanitiaan.mp3","./narasi/bekal.mp3","./narasi/hari3.mp3","./narasi/hari0.mp3","./narasi/hari1.mp3","./narasi/hari2.mp3"
   ,"./foto/foto-1.jpg","./foto/foto-2.jpeg","./foto/foto-3.jpeg","./foto/foto-4.jpeg","./foto/foto-5.jpg","./foto/foto-6.jpeg","./foto/foto-7.jpeg","./foto/foto-8.jpeg","./foto/foto-9.jpeg","./foto/foto-10.jpeg","./foto/foto-11.jpeg","./foto/foto-12.jpeg","./foto/rustam-tabara.webp"
 ];
