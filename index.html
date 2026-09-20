@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Buku saku digital Perkemahan Gabungan & Pengukuhan Pengurus Kwartir Ranting Wawotobi - Meluhu - Anggaberi - Amonggedo, 25-27 September 2026: jadwal, bekal, dan aturan.">
+<meta name="theme-color" content="#07152f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:site_name" content="Buku Saku Perkemahan Gabungan">
+<meta property="og:title" content="Buku Saku Perkemahan Gabungan &amp; Pengukuhan Pengurus Kwartir Ranting">
+<meta property="og:description" content="Jadwal, bekal, dan aturan kegiatan - Wawotobi, Meluhu, Anggaberi, dan Amonggedo, 25-27 September 2026.">
+<meta property="og:url" content="https://perkemahan-gabungan-kwaran-wawotobi.netlify.app/">
+<meta property="og:image" content="https://perkemahan-gabungan-kwaran-wawotobi.netlify.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<title>Perkemahan Gabungan &amp; Pengukuhan Pengurus Kwartir Ranting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --kanvas:#E8E3D1;
+  --kanvas-2:#F2EEE1;
+  --tinta:#23301F;
+  --tinta-2:#55604F;
+  --cokelat:#4A3620;
+  --cokelat-muda:#B08A4F;
+  --api:#E09512;
+  --rumput:#3B6B45;
+  --garis:rgba(35,48,31,.18);
+  --garis-kuat:rgba(35,48,31,.34);
+  --kartu:#FBF8EE;
+  --bayang:0 1px 0 rgba(35,48,31,.10);
+  --radius:3px;
+  --st:#9A5B00; --st-batal:#A32A1F;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --kanvas:#151A13; --kanvas-2:#1B2118; --tinta:#E9E4D3; --tinta-2:#A9B1A2;
+    --cokelat:#D9B98A; --cokelat-muda:#C9A063; --api:#F2AE3A; --rumput:#7FB183;
+    --garis:rgba(233,228,211,.16); --garis-kuat:rgba(233,228,211,.32); --kartu:#20271D; --bayang:none;
+    --_s:#7ED18C; --_p:#EF5350; --_e:#86B8E8; --st:#F2AE3A; --st-batal:#F08A72;
+  }
+}
+:root[data-theme="dark"]{
+  --kanvas:#151A13; --kanvas-2:#1B2118; --tinta:#E9E4D3; --tinta-2:#A9B1A2;
+  --cokelat:#D9B98A; --cokelat-muda:#C9A063; --api:#F2AE3A; --rumput:#7FB183;
+  --garis:rgba(233,228,211,.16); --garis-kuat:rgba(233,228,211,.32); --kartu:#20271D; --bayang:none;
+  --_s:#7ED18C; --_p:#EF5350; --_e:#86B8E8; --st:#F2AE3A; --st-batal:#F08A72;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--kanvas);color:var(--tinta);
+  font-family:Karla,"Segoe UI",system-ui,sans-serif;font-size:16px;line-height:1.6;
+  overflow-x:hidden;
+}
+img{max-width:100%}
+.bungkus{max-width:860px;margin:0 auto;padding:0 18px}
+button:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible,label:focus-visible{
+  outline:2px solid var(--api);outline-offset:2px;
+}
+
+/* ---------- bilah navigasi bawah ---------- */
+.bilah-atas{
+  position:sticky;bottom:0;z-index:30;background:var(--kanvas);border-top:1px solid var(--garis-kuat);box-shadow:0 -4px 14px rgba(0,0,0,.08)
+}
+.bilah-atas-isi{
+  max-width:1320px;margin:0 auto;padding:11px 18px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.merek{display:none}
+.merek svg{display:block}
+.merek span{font:700 .82rem/1.1 "Zilla Slab",serif;color:var(--tinta)}
+.titik-halaman{display:flex;gap:6px;align-items:center}
+.titik-halaman i{
+  width:7px;height:7px;border-radius:50%;background:var(--garis-kuat);display:block;font-style:normal;
+}
+.titik-halaman i.aktif{background:var(--api);width:18px;border-radius:4px;transition:width .25s ease,background .25s ease}
+.navigasi-halaman{display:flex;align-items:center;justify-content:center;gap:6px;order:2;flex:1 1 100%;min-width:0;overflow:visible}
+.daftar-halaman{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:nowrap;width:100%;min-width:0}
+.tombol-halaman{border:1px solid var(--garis-kuat);background:var(--kartu);color:var(--tinta);border-radius:999px;height:30px;padding:0 9px;font:700 .68rem/1 Karla,sans-serif;white-space:nowrap;cursor:pointer;transition:background .15s ease,color .15s ease,border-color .15s ease}
+.tombol-halaman:hover{border-color:var(--api)}
+.tombol-halaman.aktif{background:var(--tinta);color:var(--kanvas);border-color:var(--tinta)}
+.audio-kendali{position:fixed;top:8px;right:14px;z-index:40;display:flex;align-items:center;gap:6px;padding:4px;background:color-mix(in srgb,var(--kanvas) 88%,transparent);border:1px solid var(--garis);border-radius:999px;box-shadow:0 3px 12px rgba(0,0,0,.1)}
+.audio-tombol{border:1px solid var(--garis-kuat);background:var(--kartu);color:var(--tinta);border-radius:999px;padding:6px 9px;font:700 .68rem/1 Karla,sans-serif;cursor:pointer;white-space:nowrap;transition:background .15s ease,color .15s ease,border-color .15s ease}
+.audio-tombol[aria-pressed="true"]{background:var(--tinta);color:var(--kanvas);border-color:var(--tinta)}
+.audio-tombol[aria-pressed="false"]{opacity:.72}
+.audio-tombol:hover{border-color:var(--api)}
+
+/* ---------- panggung flipbook ---------- */
+.panggung{
+  position:relative;overflow:hidden;
+}
+.lembar{position:relative}
+.lembar-overlay{
+  position:absolute;top:0;left:0;width:100%;
+  background:var(--kanvas);
+  backface-visibility:hidden;
+  pointer-events:none;z-index:5;
+  overflow:hidden;will-change:opacity,transform,filter;
+  transition:opacity .38s cubic-bezier(.22,.61,.36,1),transform .38s cubic-bezier(.22,.61,.36,1),filter .38s ease;
+  transform:translateY(0);opacity:1;filter:blur(0);
+}
+.lembar-overlay::before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:2;opacity:0;
+  background:radial-gradient(ellipse 74% 46% at 100% 100%,rgba(12,10,5,.52),rgba(12,10,5,.16) 33%,transparent 70%);
+  mix-blend-mode:multiply;
+}
+.lembar-overlay::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
+  background:linear-gradient(105deg,rgba(255,255,255,0) 20%,rgba(255,255,255,.26) 45%,rgba(255,255,255,0) 60%),linear-gradient(90deg,transparent 40%,rgba(16,12,5,.28) 100%);
+  opacity:0;
+}
+.lembar-overlay.putar-maju{
+  transform:translateY(-6px);opacity:0;filter:blur(1.2px);
+}
+.lembar-overlay.putar-mundur{
+  transform:translateY(6px);opacity:0;filter:blur(1.2px);
+}
+.lembar-overlay.putar-maju::before,.lembar-overlay.putar-mundur::before{display:none}
+.lembar-overlay.putar-maju::after,.lembar-overlay.putar-mundur::after{animation:none;opacity:0}
+@keyframes putarMaju{
+  0%{transform:rotateY(0) rotateZ(0) translate3d(0,0,0);filter:brightness(1);box-shadow:0 0 0 rgba(20,15,5,0)}
+  18%{transform:rotateY(-9deg) rotateZ(1.2deg) translate3d(-.2%,.55%,7px);filter:brightness(.99);box-shadow:-12px 12px 24px rgba(20,15,5,.18)}
+  53%{transform:rotateY(-88deg) rotateZ(2.7deg) translate3d(-1.5%,1.15%,15px);filter:brightness(.81);box-shadow:-56px 25px 66px rgba(20,15,5,.48)}
+  100%{transform:rotateY(-176deg) rotateZ(0) translate3d(-.8%,0,0);filter:brightness(.64);box-shadow:0 0 0 rgba(20,15,5,0)}
+}
+@keyframes putarMundur{
+  0%{transform:rotateY(0) rotateZ(0) translate3d(0,0,0);filter:brightness(1);box-shadow:0 0 0 rgba(20,15,5,0)}
+  18%{transform:rotateY(9deg) rotateZ(-1.2deg) translate3d(.2%,.55%,7px);filter:brightness(.99);box-shadow:-12px 12px 24px rgba(20,15,5,.18)}
+  53%{transform:rotateY(88deg) rotateZ(-2.7deg) translate3d(1.5%,1.15%,15px);filter:brightness(.81);box-shadow:-56px 25px 66px rgba(20,15,5,.48)}
+  100%{transform:rotateY(176deg) rotateZ(0) translate3d(.8%,0,0);filter:brightness(.64);box-shadow:0 0 0 rgba(20,15,5,0)}
+}
+@keyframes bayangSudut{0%,8%{opacity:0}42%{opacity:.85}78%{opacity:.18}100%{opacity:0}}
+@keyframes kilauLipat{0%,10%{opacity:0}35%{opacity:.92}68%{opacity:.32}100%{opacity:0}}
+@keyframes kilauLipatMundur{0%,10%{opacity:0}35%{opacity:.72}68%{opacity:.24}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .lembar-overlay.putar-maju,.lembar-overlay.putar-mundur,
+  .lembar-overlay.putar-maju::after,.lembar-overlay.putar-mundur::after{animation:none!important;display:none}
+}
+
+.subkendali{background:var(--kanvas);border-bottom:1px solid var(--garis);padding:14px 0 12px}
+.pilih-label{
+  display:block;font:700 .74rem/1 Karla,sans-serif;letter-spacing:.03em;
+  color:var(--tinta-2);margin-bottom:8px;text-transform:uppercase;
+}
+.gol-tombol{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.gtombol{
+  font:700 .9rem/1.15 Karla,sans-serif;padding:13px 4px 11px;border-radius:var(--radius);
+  border:2px solid var(--garis);border-top:4px solid var(--garis);
+  background:var(--kartu);color:var(--tinta);cursor:pointer;text-align:center;
+  transition:background .12s,color .12s,border-color .12s;
+}
+.gtombol:hover{border-color:var(--garis-kuat)}
+.gtombol.gt-siaga{border-top-color:#3E8F4E}
+.gtombol.gt-penggalang{border-top-color:#D62828}
+.gtombol.gt-penegak{border-top-color:#F2C300}
+.gtombol.gt-pandega{border-top-color:#5A3A24}
+.gtombol[data-gol="semua"][aria-pressed="true"]{background:var(--tinta);border-color:var(--tinta);color:var(--kanvas)}
+.gtombol.gt-siaga[aria-pressed="true"]{background:#3E8F4E;border-color:#3E8F4E;color:#fff}
+.gtombol.gt-penggalang[aria-pressed="true"]{background:#D62828;border-color:#D62828;color:#fff}
+.gtombol.gt-penegak[aria-pressed="true"]{background:#F2C300;border-color:#F2C300;color:#241b00}
+.gtombol.gt-pandega[aria-pressed="true"]{background:#5A3A24;border-color:#5A3A24;color:#fff}
+:root[data-theme="dark"] .gtombol.gt-siaga{border-top-color:var(--_s)}
+:root[data-theme="dark"] .gtombol.gt-penggalang{border-top-color:var(--_p)}
+:root[data-theme="dark"] .gtombol.gt-penegak{border-top-color:#FFD54F}
+:root[data-theme="dark"] .gtombol.gt-pandega{border-top-color:#B9835E}
+:root[data-theme="dark"] .gtombol.gt-siaga[aria-pressed="true"]{background:var(--_s);border-color:var(--_s);color:#12180F}
+:root[data-theme="dark"] .gtombol.gt-penggalang[aria-pressed="true"]{background:var(--_p);border-color:var(--_p);color:#1A0E0A}
+:root[data-theme="dark"] .gtombol.gt-penegak[aria-pressed="true"]{background:#FFD54F;border-color:#FFD54F;color:#211700}
+:root[data-theme="dark"] .gtombol.gt-pandega[aria-pressed="true"]{background:#B9835E;border-color:#B9835E;color:#21140C}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .gtombol.gt-siaga{border-top-color:var(--_s)}
+:root:not([data-theme="light"]) .gtombol.gt-penggalang{border-top-color:var(--_p)}
+:root:not([data-theme="light"]) .gtombol.gt-penegak{border-top-color:#FFD54F}
+:root:not([data-theme="light"]) .gtombol.gt-pandega{border-top-color:#B9835E}
+:root:not([data-theme="light"]) .gtombol.gt-siaga[aria-pressed="true"]{background:var(--_s);border-color:var(--_s);color:#12180F}
+:root:not([data-theme="light"]) .gtombol.gt-penggalang[aria-pressed="true"]{background:var(--_p);border-color:var(--_p);color:#1A0E0A}
+:root:not([data-theme="light"]) .gtombol.gt-penegak[aria-pressed="true"]{background:#FFD54F;border-color:#FFD54F;color:#211700}
+:root:not([data-theme="light"]) .gtombol.gt-pandega[aria-pressed="true"]{background:#B9835E;border-color:#B9835E;color:#21140C}}
+.cari{
+  margin-top:9px;width:100%;font:400 .88rem Karla,sans-serif;
+  padding:9px 12px;border:1px solid var(--garis);border-radius:999px;background:var(--kartu);color:var(--tinta);
+}
+.cari::placeholder{color:var(--tinta-2)}
+
+/* ---------- halaman sampul & penutup (penuh, gelap) ---------- */
+.halgelap{min-height:calc(100vh - 49px);min-height:calc(100dvh - 49px);background:linear-gradient(180deg,rgba(21,31,22,.72) 0%,rgba(21,31,22,.84) 48%,rgba(21,31,22,.96) 100%),url("latar-pramuka-kemah.webp") center 42%/cover no-repeat;color:#EDE7D4;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.halgelap::before{content:"";position:absolute;inset:14px;border:1px solid rgba(237,231,212,.28);pointer-events:none}
+.halgelap::after{content:"";position:absolute;inset:20px;border:1px solid rgba(237,231,212,.14);pointer-events:none}
+.banner-kegiatan{width:100%;background:#07152f;line-height:0;position:relative;z-index:1;overflow:hidden}
+.banner-kegiatan img{display:block;width:100%;height:auto;margin:0 auto;max-height:none;object-fit:contain;object-position:center center}
+.halaman-bekal .banner-kegiatan{margin-bottom:14px}
+.halaman-hari0 .banner-kegiatan,.halaman-hari1 .banner-kegiatan,.halaman-hari2 .banner-kegiatan{margin-bottom:0}
+.halaman-tatib{
+  min-height:100%;
+  background:
+    linear-gradient(180deg,rgba(235,231,216,.90) 0%,rgba(245,242,231,.96) 42%,rgba(245,242,231,.99) 100%),
+    url("latar-pramuka-kemah.webp") center 38%/cover no-repeat;
+  padding:1px 0 28px;
+}
+.halaman-tatib .panel{
+  background:rgba(245,242,231,.72);
+  border:1px solid rgba(86,76,52,.13);
+  border-radius:8px;
+  padding:1px 18px 24px;
+  box-shadow:0 8px 24px rgba(44,38,24,.08);
+}
+.halaman-tatib .panel h2{color:#263522}
+.halaman-tatib .panel .sub{color:#5d6556}
+.halaman-tatib .bekal-visual{max-width:var(--lebar);margin:0 auto 20px;padding:0 18px}
+.halaman-tatib .bekal-visual img{display:block;width:100%;height:170px;object-fit:cover;object-position:center 45%;border-radius:18px;border:1px solid rgba(86,76,52,.18);box-shadow:0 12px 28px rgba(44,38,24,.16);filter:saturate(.92)}
+:root[data-theme="dark"] .halaman-tatib{
+  background:
+    linear-gradient(180deg,rgba(25,31,23,.86) 0%,rgba(27,34,25,.94) 42%,rgba(27,34,25,.98) 100%),
+    url("latar-pramuka-kemah.webp") center 38%/cover no-repeat;
+}
+:root[data-theme="dark"] .halaman-tatib .panel{background:rgba(27,34,25,.78);border-color:rgba(233,228,211,.14);box-shadow:none}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .halaman-tatib{background:linear-gradient(180deg,rgba(25,31,23,.86) 0%,rgba(27,34,25,.94) 42%,rgba(27,34,25,.98) 100%),url("latar-pramuka-kemah.webp") center 38%/cover no-repeat}
+  :root:not([data-theme="light"]) .halaman-tatib .panel{background:rgba(27,34,25,.78);border-color:rgba(233,228,211,.14);box-shadow:none}
+}
+:root[data-theme="dark"] .halaman-tatib .daftar{background:rgba(21,26,19,.86);border-color:rgba(233,228,211,.18)}
+:root[data-theme="dark"] .halaman-tatib .daftar label{background:#20271D;color:#E9E4D3;border-color:rgba(233,228,211,.18)}
+:root[data-theme="dark"] .halaman-tatib .daftar label:has(input:checked){background:#2b4930;border-color:#7FB183;color:#F1F4E8}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .halaman-tatib .daftar{background:rgba(21,26,19,.86);border-color:rgba(233,228,211,.18)}
+  :root:not([data-theme="light"]) .halaman-tatib .daftar label{background:#20271D;color:#E9E4D3;border-color:rgba(233,228,211,.18)}
+  :root:not([data-theme="light"]) .halaman-tatib .daftar label:has(input:checked){background:#2b4930;border-color:#7FB183;color:#F1F4E8}
+}
+.hal-isi{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:56px 24px 40px;max-width:640px;margin:0 auto}
+.lambang{width:108px;height:108px;border:1px solid rgba(237,231,212,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:22px;overflow:hidden;background:#EDE7D4;box-shadow:0 8px 24px rgba(0,0,0,.22)}
+.lambang img{width:100%;height:100%;object-fit:cover;display:block}
+.eyebrow-p{font:600 .78rem/1 Karla,sans-serif;letter-spacing:.08em;color:#C9A063;margin-bottom:14px}
+.halgelap h1,.halgelap h2{font-family:"Zilla Slab",Georgia,serif;font-weight:700;font-size:clamp(2rem,7.2vw,3.4rem);line-height:1.06;margin:0 0 14px}
+.halgelap h1.judul-kegiatan{max-width:620px;font-size:clamp(1.55rem,4.8vw,2.6rem);line-height:1.06;letter-spacing:-.012em;text-wrap:balance;margin:0 auto 20px;color:#F3EEDD}
+.halgelap h1.judul-kegiatan span{display:block;color:inherit;font-size:clamp(.72rem,3vw,1.9rem);line-height:1.16;letter-spacing:inherit;margin:clamp(18px,3vw,30px) 0 0;white-space:nowrap}
+.halgelap .tagline{font-size:1.02rem;color:#C7BFA4;max-width:46ch;margin:0 auto;line-height:1.55}
+.info-acara{margin:34px 0 30px;width:100%;border-top:1px solid rgba(237,231,212,.22);border-bottom:1px solid rgba(237,231,212,.22);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,.9fr) minmax(0,1.35fr)}
+.info-acara div{padding:16px 10px;border-right:1px solid rgba(237,231,212,.14)}
+.info-acara div:last-child{border-right:none}
+.info-acara div:nth-child(4){grid-column:1/-1;width:min(100%,460px);justify-self:center;border-right:none;border-top:1px solid rgba(237,231,212,.14);padding-top:14px}
+.info-acara small{display:block;font-size:.72rem;letter-spacing:.05em;color:#A79B78;margin-bottom:5px}
+.info-acara b{font-family:"Zilla Slab",serif;font-weight:600;font-size:1.02rem;color:#F3EEDD}
+.info-acara div:nth-child(3) b{font-size:.96rem;line-height:1.3}
+.mulai{display:inline-flex;align-items:center;gap:8px;font:600 .92rem Karla,sans-serif;color:#171E14;background:var(--api);border:none;border-radius:999px;padding:12px 22px;cursor:pointer;text-decoration:none}
+.mulai:hover{filter:brightness(1.06)}
+.qr-akses{display:flex;align-items:center;gap:10px;margin:10px auto 0;padding:4px 8px 4px 4px;border:1px solid rgba(237,231,212,.3);border-radius:8px;background:rgba(12,18,11,.34);color:#DCD5BE;font-size:.72rem;line-height:1.25;text-align:left;max-width:230px}
+.qr-akses img{width:68px;height:68px;display:block;background:#fff;border-radius:3px}
+.qr-akses span{max-width:130px}
+.dasadarma{border-top:1px dashed rgba(237,231,212,.22);padding:24px 24px 30px;text-align:left}
+.dasadarma-bungkus{max-width:640px;margin:0 auto}
+.dasadarma h2{font-family:"Zilla Slab",serif;font-size:1rem;font-weight:600;letter-spacing:.03em;color:#C9A063;margin:0 0 14px;text-align:center}
+.dasadarma ol{columns:2;column-gap:28px;margin:0;padding-left:20px;font-size:.88rem;line-height:1.7;color:#DCD5BE}
+.dasadarma li{break-inside:avoid;margin-bottom:6px;padding-left:2px}
+@media (max-width:520px){.dasadarma ol{columns:1} .hal-isi{padding-top:48px}}
+.hal-blok{border-top:1px dashed rgba(237,231,212,.22);padding:24px 24px 4px;text-align:left}
+.hal-blok-bungkus{max-width:640px;margin:0 auto}
+.hal-blok h3{font-family:"Zilla Slab",serif;font-size:.95rem;font-weight:600;letter-spacing:.02em;color:#C9A063;margin:0 0 12px}
+.hal-blok p{font-size:.92rem;color:#DCD5BE;line-height:1.65;max-width:56ch;margin:0 0 14px}
+.aturan-gelap{counter-reset:a;list-style:none;padding:0;margin:0 0 20px}
+.aturan-gelap li{counter-increment:a;position:relative;padding:8px 0 8px 32px;border-bottom:1px solid rgba(237,231,212,.14);font-size:.9rem;color:#E4DFC9;max-width:60ch}
+.aturan-gelap li::before{content:counter(a,decimal-leading-zero);position:absolute;left:0;top:9px;font-family:"Zilla Slab",serif;font-weight:600;color:#C9A063;font-size:.88rem}
+.terimakasih{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}
+.terimakasih span{font-size:.8rem;padding:5px 11px;border:1px solid rgba(237,231,212,.32);border-radius:999px;color:#EFE7D4}
+.ttd{padding:6px 0 28px;text-align:center;color:#DCD5BE}
+.ttd p{margin:0 0 4px;font-size:.85rem}
+.ttd .garis-ttd{margin:46px auto 6px;width:200px;border-top:1px solid rgba(237,231,212,.4);font-size:.82rem;padding-top:6px;color:#C9A063}
+.ttd .nama-ttd{font-size:.82rem;color:#A79B78}
+
+/* ---------- progres ---------- */
+.progres{display:flex;align-items:center;gap:12px;margin:22px 0 6px}
+.progres .bar{flex:1;height:7px;background:var(--garis);border-radius:999px;overflow:hidden}
+.progres .isi{height:100%;width:0;background:var(--api);transition:width .35s ease}
+.progres span{font:600 .82rem Karla,sans-serif;color:var(--tinta-2);white-space:nowrap}
+
+/* ---------- lini masa ---------- */
+.judul-hal{font-family:"Zilla Slab",serif;font-size:1.55rem;font-weight:600;margin:22px 0 2px}
+.judul-hal small{display:block;font:400 .85rem Karla,sans-serif;color:var(--tinta-2);margin-top:3px}
+.lini{position:relative;padding:8px 0 40px}
+.lini::before{content:"";position:absolute;left:62px;top:0;bottom:44px;width:1px;background:var(--garis)}
+.sesi{position:relative;padding-left:88px;margin-bottom:14px}
+.jam{position:absolute;left:0;top:12px;width:52px;text-align:right;font-family:"Zilla Slab",serif;font-size:1.02rem;font-weight:600;color:var(--tinta)}
+.jam small{display:block;font-family:Karla,sans-serif;font-size:.7rem;font-weight:400;color:var(--tinta-2)}
+.sesi::before{content:"";position:absolute;left:58px;top:19px;width:9px;height:9px;border-radius:50%;background:var(--kanvas);border:2px solid var(--cokelat-muda)}
+.sesi.tandai::before{background:var(--api);border-color:var(--api)}
+details.kartu{background:var(--kartu);border:1px solid var(--garis);border-left:3px solid var(--cokelat-muda);border-radius:var(--radius);box-shadow:var(--bayang)}
+details.kartu[open]{border-left-color:var(--api)}
+summary{list-style:none;cursor:pointer;padding:13px 15px;display:flex;gap:10px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary .judul{flex:1;font-family:"Zilla Slab",serif;font-size:1.12rem;font-weight:600;line-height:1.25}
+summary .tanda{flex:0 0 auto;color:var(--tinta-2);font-size:1.1rem;line-height:1;margin-top:4px;transition:transform .18s ease}
+details[open] summary .tanda{transform:rotate(45deg)}
+.meta{display:flex;flex-wrap:wrap;gap:6px;padding:0 15px 12px}
+.meta i{font-style:normal;font-size:.73rem;padding:3px 8px;border-radius:999px;border:1px solid var(--garis);color:var(--tinta-2)}
+.meta i.g-siaga{border-color:#3E8F4E;color:#3E8F4E}
+.meta i.g-penggalang{border-color:#D62828;color:#D62828}
+.meta i.g-penegak{border-color:#F2C300;color:#B48700}
+.meta i.g-pandega{border-color:#5A3A24;color:#5A3A24}
+:root[data-theme="dark"] .meta i.g-siaga{border-color:var(--_s);color:var(--_s)}
+:root[data-theme="dark"] .meta i.g-penggalang{border-color:var(--_p);color:var(--_p)}
+:root[data-theme="dark"] .meta i.g-penegak{border-color:#FFD54F;color:#FFD54F}
+:root[data-theme="dark"] .meta i.g-pandega{border-color:#B9835E;color:#B9835E}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .meta i.g-siaga{border-color:var(--_s);color:var(--_s)}
+:root:not([data-theme="light"]) .meta i.g-penggalang{border-color:var(--_p);color:var(--_p)}
+:root:not([data-theme="light"]) .meta i.g-penegak{border-color:#FFD54F;color:#FFD54F}
+:root:not([data-theme="light"]) .meta i.g-pandega{border-color:#B9835E;color:#B9835E}}
+.badan{padding:0 15px 16px;border-top:1px solid var(--garis);margin-top:2px;padding-top:14px}
+.badan h4{font:700 .78rem/1.3 Karla,sans-serif;letter-spacing:.02em;color:var(--tinta-2);margin:16px 0 7px}
+.badan h4:first-child{margin-top:0}
+.rincian{border:1px solid var(--garis);border-radius:var(--radius);overflow:hidden;margin-bottom:4px}
+.rincian div{display:flex;gap:10px;padding:9px 12px;font-size:.87rem;border-bottom:1px solid var(--garis);align-items:baseline}
+.rincian div:last-child{border-bottom:none}
+.rincian b{flex:0 0 92px;color:var(--tinta-2);font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.03em}
+.rincian span{flex:1;color:var(--tinta)}
+.tautan-denah{font:600 .78rem Karla,sans-serif;color:var(--rumput);background:none;border:none;cursor:pointer;text-decoration:underline;padding:0;margin-left:2px}
+:root[data-theme="dark"] .tautan-denah{color:var(--_s)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tautan-denah{color:var(--_s)}}
+.badan ol,.badan ul{margin:0;padding-left:20px}
+.badan li{margin-bottom:6px;max-width:66ch}
+.petunjuk-teknis{border:1px solid var(--garis);border-radius:var(--radius);padding:10px 12px;background:color-mix(in srgb,var(--kanvas) 65%,var(--kartu))}
+.petunjuk-teknis .label-teknis{font:700 .72rem/1.3 Karla,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--rumput);margin:2px 0 7px}
+.petunjuk-teknis .label-teknis:not(:first-child){border-top:1px dashed var(--garis-kuat);padding-top:10px;margin-top:10px}
+.petunjuk-teknis .uraian-teks p{margin:0 0 8px;line-height:1.55}
+.kartu summary{scroll-margin-top:86px}
+.badan p{margin:0 0 6px;max-width:66ch}
+.kunci{background:color-mix(in srgb,var(--api) 13%,transparent);border-left:3px solid var(--api);padding:10px 13px;border-radius:0 var(--radius) var(--radius) 0;font-size:.92rem;margin-top:14px}
+.kunci b{font-family:"Zilla Slab",serif;font-weight:600}
+.bawaan{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.bawaan span{font-size:.79rem;background:color-mix(in srgb,var(--rumput) 14%,transparent);color:var(--tinta);padding:4px 9px;border-radius:var(--radius)}
+.selesai{display:flex;align-items:center;gap:9px;margin-top:16px;padding-top:12px;border-top:1px dashed var(--garis-kuat);font-size:.9rem;cursor:pointer;color:var(--tinta-2)}
+.selesai input{width:17px;height:17px;accent-color:var(--api);cursor:pointer}
+
+/* ---------- panel bekal ---------- */
+.panel h2{font-family:"Zilla Slab",serif;font-size:1.6rem;font-weight:600;margin:30px 0 4px}
+.panel h2:first-child{margin-top:20px}
+.panel .sub{color:var(--tinta-2);font-size:.93rem;margin:0 0 16px;max-width:60ch}
+.daftar{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px;background:var(--kartu);border:1px solid var(--garis);border-radius:var(--radius);padding:14px 16px}
+.daftar label{display:flex;gap:9px;align-items:flex-start;padding:5px 0;font-size:.92rem;cursor:pointer}
+.daftar input{margin-top:3px;accent-color:var(--rumput);width:16px;height:16px;cursor:pointer}
+.daftar input:checked + span{color:var(--tinta-2);text-decoration:line-through}
+.panel h2{position:relative;padding-bottom:8px}
+.panel h2::after{content:"";display:block;width:42px;height:3px;margin-top:8px;border-radius:999px;background:var(--api)}
+.halaman-tatib .panel h2::after{background:var(--rumput)}
+.halaman-tatib .daftar{background:rgba(255,255,255,.55)}
+.halaman-hari0,.halaman-hari1,.halaman-hari2{background:var(--kanvas-2)}
+.halaman-registrasi{background:var(--kanvas-2)}
+.registrasi-panel{max-width:760px;margin:0 auto;padding:30px 18px 44px}
+.registrasi-panel h1{font-family:"Zilla Slab",Georgia,serif;color:var(--rumput);font-size:clamp(1.7rem,4vw,2.5rem);margin:0 0 6px}
+.registrasi-panel .tanggal{color:var(--tinta-2);font-size:1rem;margin:0 0 22px}
+.registrasi-kartu{background:var(--kartu);border:1px solid var(--garis);border-left:4px solid var(--api);border-radius:12px;padding:17px 18px;margin:0 0 12px;box-shadow:0 4px 12px rgba(35,43,27,.06)}
+.registrasi-kartu h3{margin:0 0 7px;color:var(--tinta);font:700 1rem "Zilla Slab",serif}
+.registrasi-kartu p,.registrasi-kartu ul{margin:0;color:var(--tinta-2);line-height:1.55}
+.registrasi-kartu ul{padding-left:19px}
+.halaman-kepanitiaan{background:var(--kanvas-2)}
+.halaman-tema{background:var(--kanvas-2)}
+.halaman-foto{background:var(--kanvas-2)}
+.foto-panel{max-width:980px;margin:0 auto;padding:28px 18px 48px}
+.foto-panel h1{font-family:"Zilla Slab",Georgia,serif;color:var(--rumput);font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.12;margin:0 0 6px}
+.foto-panel .tanggal{color:var(--tinta-2);margin:0 0 22px;line-height:1.45}
+.foto-kelompok{margin:0 0 20px}
+.foto-kelompok h2{margin:0 0 10px;padding-bottom:7px;border-bottom:2px solid var(--api);color:var(--tinta);font:700 1.22rem "Zilla Slab",serif}
+.foto-grid{display:grid;grid-template-columns:repeat(4,minmax(0,180px));justify-content:center;gap:12px}
+.foto-grid-dokumen .foto-item:nth-child(1){grid-column:2}
+.foto-grid-dokumen .foto-item:nth-child(2){grid-column:3}
+.foto-grid-dokumen .foto-item:nth-child(3){grid-column:1}
+.foto-grid-dokumen .foto-item:nth-child(11){grid-column:2}
+.foto-grid-dokumen .foto-item:nth-child(12){grid-column:3}
+.foto-item{margin:0;background:var(--kartu);border:1px solid var(--garis);border-radius:11px;padding:7px;box-shadow:0 3px 10px rgba(35,43,27,.06)}
+.foto-item img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:7px;background:#a71919}
+.foto-item figcaption{padding:8px 4px 4px;text-align:center;color:var(--tinta-2);font:600 .78rem/1.25 Karla,sans-serif;min-height:2.45em}
+.foto-item figcaption span{display:block;white-space:nowrap;overflow:hidden;text-overflow:clip}
+.foto-item figcaption .foto-nama{color:var(--tinta);font-weight:800}
+@media (max-width:700px){.foto-panel{padding-left:14px;padding-right:14px}.foto-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.foto-grid-dokumen .foto-item:nth-child(1),.foto-grid-dokumen .foto-item:nth-child(2),.foto-grid-dokumen .foto-item:nth-child(3),.foto-grid-dokumen .foto-item:nth-child(11),.foto-grid-dokumen .foto-item:nth-child(12){grid-column:auto}.foto-item figcaption{font-size:.72rem}}
+.tema-panel{max-width:980px;margin:0 auto;padding:28px 18px 48px}
+.tema-panel h1{font-family:"Zilla Slab",Georgia,serif;color:var(--rumput);font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.12;margin:0 0 6px}
+.tema-panel .tanggal{color:var(--tinta-2);margin:0 0 22px;line-height:1.45}
+.tema-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(240px,.85fr);gap:22px;align-items:center;background:linear-gradient(135deg,color-mix(in srgb,var(--rumput) 10%,var(--kartu)),var(--kartu));border:1px solid var(--garis);border-radius:16px;padding:24px 26px;box-shadow:var(--bayang);overflow:visible}
+.tema-hero-copy{min-width:0}
+.tema-eyebrow{margin:0 0 9px;color:var(--api);font:700 .75rem/1.3 Karla,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.tema-hero h2{margin:0;color:var(--tinta);font:700 clamp(1.45rem,3.2vw,2.25rem)/1.14 "Zilla Slab",Georgia,serif;letter-spacing:0;text-wrap:balance}
+.tema-hero h2 .semboyan-line{display:block}
+.tema-hero h2 .semboyan-line+.semboyan-line{margin-top:14px}
+.tema-hero p{margin:13px 0 0;color:var(--tinta-2);line-height:1.6;max-width:58ch}
+.tema-hero-art{display:flex;justify-content:center;align-items:center;height:260px;min-height:0;position:relative}
+.tema-hero-art img,.tema-hero-art video{display:block;width:min(100%,370px);height:100%;max-height:420px;object-fit:contain;filter:drop-shadow(0 14px 14px rgba(35,43,27,.16));position:relative;margin:auto}
+.tema-hero-art img{animation:maskot-apung 3.8s ease-in-out infinite}
+@keyframes maskot-apung{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.tema-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:18px}
+.tema-card{background:var(--kartu);border:1px solid var(--garis);border-radius:12px;padding:18px 19px;box-shadow:0 3px 10px rgba(35,43,27,.05)}
+.tema-card h3{margin:0 0 8px;color:var(--rumput);font:700 1.15rem "Zilla Slab",serif}
+.tema-card p{margin:0;color:var(--tinta-2);line-height:1.58}
+.sam-card{border-top:3px solid var(--api)}
+.sam-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px;margin-top:10px}
+.sam-list div{border-top:1px dashed var(--garis-kuat);padding-top:8px;color:var(--tinta-2);line-height:1.45}
+.sam-list b{display:block;color:var(--tinta);font:700 1rem "Zilla Slab",serif;margin-bottom:2px}
+@media (max-width:700px){.tema-panel{padding-left:14px;padding-right:14px}.tema-hero{grid-template-columns:1fr;padding:19px 18px 8px}.tema-hero-art{height:230px;order:-1}.tema-hero-art img,.tema-hero-art video{width:min(82%,300px);height:220px;max-height:220px;object-fit:contain}.tema-grid{grid-template-columns:1fr}.sam-list{grid-template-columns:1fr}}
+.kepanitiaan-panel{max-width:860px;margin:0 auto;padding:28px 18px 44px}
+.kepanitiaan-panel h1{font-family:"Zilla Slab",Georgia,serif;color:var(--rumput);font-size:clamp(1.55rem,3.8vw,2.35rem);line-height:1.12;margin:0 0 6px}
+.kepanitiaan-panel .tanggal{color:var(--tinta-2);margin:0 0 22px;line-height:1.45}
+.struktur-kelompok{background:var(--kartu);border:1px solid var(--garis);border-radius:12px;margin:0 0 12px;padding:0 16px;box-shadow:0 3px 10px rgba(35,43,27,.05)}
+.struktur-kelompok summary{cursor:pointer;padding:14px 2px;font:700 1rem "Zilla Slab",serif;color:var(--tinta);list-style-position:inside}
+.struktur-kelompok[open] summary{color:var(--rumput);border-bottom:1px solid var(--garis)}
+.struktur-kelompok ul{margin:0;padding:12px 0 14px 20px;color:var(--tinta-2);line-height:1.5}
+.struktur-kelompok li{margin:3px 0}
+.panitia-inti ul li{display:grid;grid-template-columns:minmax(150px,190px) 10px 1fr;gap:0;align-items:baseline}
+.panitia-inti ul li b{text-align:left;color:var(--tinta)}
+.panitia-inti ul li i{font-style:normal;text-align:center;color:var(--tinta)}
+.panitia-inti .anggota-int{align-items:start}
+.panitia-inti .anggota-int span{line-height:1.55}
+.struktur-int{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 14px}
+.struktur-pimpinan{grid-template-columns:repeat(2,minmax(0,1fr))}
+.struktur-int div{background:color-mix(in srgb,var(--kanvas-2) 70%,var(--kartu));border-left:3px solid var(--api);border-radius:8px;padding:12px 14px;color:var(--tinta-2);line-height:1.45;min-height:82px;text-align:center}
+.struktur-int b{display:block;color:var(--tinta);font:700 .78rem Karla,sans-serif;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+.struktur-tanda{margin-top:28px;gap:18px 28px}
+.struktur-tanda div{background:transparent;border-left:0;border-top:1px solid var(--garis);border-radius:0;min-height:170px;padding:14px 10px 10px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.struktur-tanda div:last-child{grid-column:1/-1;min-height:145px;border-top:1px solid var(--garis)}
+.struktur-tanda b{font-size:.76rem;letter-spacing:.08em}
+.ruang-tanda{display:block;height:76px;width:100%}
+.struktur-tanda div:last-child .ruang-tanda{height:34px}
+@media (max-width:600px){.struktur-int{grid-template-columns:1fr}.struktur-pimpinan{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.struktur-pimpinan div{padding:10px 5px;font-size:.72rem;line-height:1.35}.struktur-pimpinan b{font-size:.65rem;letter-spacing:.03em}.panitia-inti ul li{grid-template-columns:120px 10px 1fr;gap:0;font-size:.86rem}.kepanitiaan-panel{padding-left:14px;padding-right:14px}.struktur-kelompok{padding-left:12px;padding-right:12px}}
+.hari-visual{max-width:var(--lebar);margin:0 auto;padding:18px 18px 0}
+.hari-visual img{display:block;width:100%;height:150px;object-fit:cover;object-position:center 58%;border-radius:16px;border:1px solid var(--garis);box-shadow:var(--bayang);filter:saturate(.9)}
+.halaman-hari1 .hari-visual img{object-position:center 50%;filter:saturate(.95) hue-rotate(-5deg)}
+.halaman-hari2 .hari-visual img{object-position:center 62%;filter:saturate(.88) hue-rotate(6deg)}
+.halaman-hari0 .subkendali{border-top:4px solid #3E8F4E;background:linear-gradient(135deg,color-mix(in srgb,#3E8F4E 10%,var(--kanvas)) 0%,var(--kanvas) 70%)}
+.halaman-hari1 .subkendali{border-top:4px solid #D62828;background:linear-gradient(135deg,color-mix(in srgb,#D62828 10%,var(--kanvas)) 0%,var(--kanvas) 70%)}
+.halaman-hari2 .subkendali{border-top:4px solid #2F6DA8;background:linear-gradient(135deg,color-mix(in srgb,#2F6DA8 10%,var(--kanvas)) 0%,var(--kanvas) 70%)}
+.halaman-hari0 .judul-hal{color:#2f6f3a}.halaman-hari1 .judul-hal{color:#a53a25}.halaman-hari2 .judul-hal{color:#285d8d}
+details.kartu{border-radius:12px;overflow:hidden;transition:transform .16s ease,box-shadow .16s ease}
+details.kartu:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(35,48,31,.12)}
+.judul-hal small{font-weight:500;letter-spacing:.02em}
+.aturan{counter-reset:a;list-style:none;padding:0;margin:0}
+.aturan li{counter-increment:a;position:relative;padding:9px 0 9px 38px;border-bottom:1px solid var(--garis);max-width:68ch}
+.aturan li::before{content:counter(a,decimal-leading-zero);position:absolute;left:0;top:10px;font-family:"Zilla Slab",serif;font-weight:600;color:var(--cokelat-muda);font-size:.95rem}
+.denah{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:6px}
+.denah div{border:1px solid var(--garis-kuat);border-radius:var(--radius);padding:14px 9px;text-align:center;font-size:.79rem;color:var(--tinta-2);background:var(--kartu)}
+.denah div b{display:block;font-family:"Zilla Slab",serif;color:var(--tinta);font-size:.95rem;font-weight:600}
+.denah .lapangan{grid-column:span 2;background:color-mix(in srgb,var(--rumput) 18%,var(--kartu))}
+.denah .api-u{background:color-mix(in srgb,var(--api) 16%,var(--kartu))}
+.kontak{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:6px}
+.kontak div{border:1px solid var(--garis);border-radius:var(--radius);padding:12px 14px;background:var(--kartu)}
+.kontak b{display:block;font-family:"Zilla Slab",serif;font-size:1rem}
+.kontak span{font-size:.87rem;color:var(--tinta-2)}
+.sandi{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:6px}
+.sandi th,.sandi td{border:1px solid var(--garis);padding:7px 10px;text-align:left}
+.sandi th{background:var(--kartu);font-family:"Zilla Slab",serif;font-weight:600}
+.gulung{overflow-x:auto}
+
+/* ---------- navigasi bawah & footer ---------- */
+.paging{max-width:860px;margin:0 auto;padding:16px 18px 4px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.paging button{
+  font:600 .88rem Karla,sans-serif;background:var(--kartu);color:var(--tinta);
+  border:1px solid var(--garis);border-radius:999px;padding:11px 18px;cursor:pointer;
+  display:flex;align-items:center;gap:6px;
+}
+.paging button:hover:not(:disabled){border-color:var(--garis-kuat)}
+.paging button:disabled{opacity:.35;cursor:default}
+.paging .tengah{font:600 .78rem Karla,sans-serif;color:var(--tinta-2);text-align:center}
+.paging .tengah b{display:block;font:600 .92rem "Zilla Slab",serif;color:var(--tinta);margin-top:1px}
+.petunjuk-geser{
+  text-align:center;font-size:.74rem;color:var(--tinta-2);padding:2px 0 14px;
+}
+footer{
+  border-top:1px solid var(--garis-kuat);padding:16px 0 40px;margin-top:6px;
+  color:var(--tinta-2);font-size:.85rem;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;
+}
+footer button{
+  font:500 .82rem Karla,sans-serif;background:transparent;color:var(--tinta-2);
+  border:1px solid var(--garis);border-radius:999px;padding:6px 13px;cursor:pointer;
+}
+footer button:hover{border-color:var(--garis-kuat);color:var(--tinta)}
+.kosong{padding:40px 4px;color:var(--tinta-2);font-size:.95rem;max-width:52ch}
+
+@media (max-width:560px){
+  .lini::before{left:0}
+  .sesi{padding-left:0}
+  .sesi::before{display:none}
+  .jam{position:static;width:auto;text-align:left;margin-bottom:6px;display:flex;gap:9px;align-items:baseline}
+  .jam small{display:inline}
+  .denah{grid-template-columns:repeat(2,1fr)}
+  .denah .lapangan{grid-column:span 2}
+}
+
+/* ---------- tata letak HP & tablet ---------- */
+@media (max-width:900px){
+  .bungkus,.bilah-atas-isi,.paging{max-width:760px}
+  .daftar-halaman{flex-wrap:wrap}
+  .hal-isi{max-width:700px;padding:48px 22px 34px}
+  .halgelap h1.judul-kegiatan{max-width:620px;font-size:clamp(1.9rem,5.9vw,3rem)}
+  .info-acara{margin-top:28px;margin-bottom:24px}
+  .sesi{padding-left:78px}
+}
+@media (max-width:600px){
+  body{font-size:15px}
+  .bungkus{padding-left:14px;padding-right:14px}
+  .bilah-atas-isi{padding:10px 14px}
+  .merek span{font-size:.76rem}
+  .titik-halaman{display:none}
+  .audio-kendali{gap:4px}
+  .audio-tombol{padding:7px 8px;font-size:.64rem}
+  .halgelap{background-position:center center}
+  .banner-kegiatan img{max-height:none;object-fit:contain}
+  .hal-isi{min-height:calc(100dvh - 49px);padding:34px 18px 26px;justify-content:center}
+  .lambang{width:82px;height:82px;margin-bottom:18px}
+  .eyebrow-p{font-size:.67rem;line-height:1.25;letter-spacing:.06em;margin-bottom:10px}
+  .halgelap h1.judul-kegiatan{max-width:100%;font-size:clamp(1.5rem,7.5vw,2rem);line-height:1.05;margin-bottom:16px}
+  .halgelap .tagline{font-size:.9rem;line-height:1.45}
+  .info-acara{grid-template-columns:1fr;margin:22px 0}
+  .info-acara div,.info-acara div:nth-child(4){grid-column:1;width:100%;max-width:none;border-right:none;border-top:1px solid rgba(237,231,212,.14);padding:10px 8px}
+  .info-acara div:first-child{border-top:none}
+  .info-acara small{font-size:.68rem;margin-bottom:3px}
+  .info-acara b{font-size:.93rem;line-height:1.3}
+  .mulai{font-size:.86rem;padding:10px 18px}
+  .dasadarma{padding:20px 18px 26px}
+  .dasadarma ol{columns:1;font-size:.82rem;line-height:1.55}
+  .paging{padding:12px 14px 2px}
+  .paging button{font-size:.78rem;padding:9px 12px}
+  .paging .tengah{font-size:.7rem}
+  .paging .tengah b{font-size:.82rem}
+  .petunjuk-geser{font-size:.68rem;padding-bottom:10px}
+  footer{padding-bottom:28px;flex-direction:column;align-items:stretch;text-align:center}
+  footer span:last-child{display:flex;justify-content:center;gap:6px}
+  footer button{font-size:.75rem;padding:6px 10px}
+  .subkendali{padding:10px 0}
+  .gol-tombol{gap:5px}
+  .gtombol{font-size:.78rem;padding:10px 2px 9px}
+  .cari{font-size:.82rem;padding:8px 11px}
+  .judul-hal{font-size:1.35rem;margin-top:18px}
+  .lini::before{left:0}
+  .sesi{padding-left:0;margin-bottom:12px}
+  .jam{position:static;width:auto;text-align:left;margin-bottom:5px;display:flex;gap:8px;align-items:baseline;font-size:.96rem}
+  .jam small{display:inline}
+  .sesi::before{display:none}
+  summary{padding:11px 12px}
+  summary .judul{font-size:1rem}
+  .meta{padding:0 12px 10px}
+  .badan{padding:0 12px 13px;padding-top:12px}
+  .rincian div{padding:8px 10px;font-size:.82rem;gap:7px}
+  .rincian b{flex-basis:72px;font-size:.66rem}
+  .rincian span{min-width:0;overflow-wrap:anywhere}
+  .badan li{font-size:.86rem}
+  .denah{grid-template-columns:repeat(2,1fr)}
+  .subkendali{border-top-width:3px}
+  .pilih-label{font-size:.7rem;margin-bottom:7px}
+  .gol-tombol{grid-template-columns:repeat(2,1fr);gap:7px}
+  .gtombol{min-height:42px;font-size:.82rem}
+  .cari{margin-top:10px;background:var(--kanvas-2);border-radius:10px}
+  .judul-hal{font-size:1.55rem;line-height:1.15;margin:20px 0 8px}
+  .judul-hal small{font-size:.8rem;margin-top:6px}
+  .lini{padding-top:4px;padding-bottom:24px}
+  details.kartu{border-radius:12px;margin-bottom:9px}
+  summary{padding:13px 14px}
+  summary .judul{font-size:1.04rem;line-height:1.3}
+  .badan{font-size:.91rem;line-height:1.55}
+  .panel h2{font-size:1.5rem;margin-top:24px}
+  .panel .sub{font-size:.9rem;line-height:1.5}
+  .halaman-tatib{padding-bottom:18px}
+  .halaman-tatib .bekal-visual{padding:0 14px;margin-bottom:14px}
+  .halaman-tatib .bekal-visual img{height:128px;border-radius:12px}
+  .halaman-tatib .panel{padding:1px 14px 20px;border-radius:12px}
+  .halaman-tatib .daftar{grid-template-columns:1fr;padding:12px 13px;border-radius:10px;background:rgba(255,255,255,.68)}
+  .halaman-tatib .daftar label{font-size:.92rem;line-height:1.35;padding:11px 10px;margin:3px 0;border:1px solid rgba(86,76,52,.16);border-radius:9px;background:rgba(255,255,255,.72);gap:11px;min-height:48px}
+  .halaman-tatib .daftar label:has(input:checked){background:color-mix(in srgb,var(--rumput) 16%,#fff);border-color:color-mix(in srgb,var(--rumput) 50%,transparent)}
+  .halaman-tatib .daftar input{width:22px;height:22px;flex:0 0 22px;margin:0;accent-color:var(--rumput)}
+  .halaman-tatib .daftar label:focus-within{outline:2px solid var(--api);outline-offset:1px}
+  .halaman-tatib .aturan li{padding:10px 0 10px 34px;font-size:.91rem}
+  .hari-visual{padding:12px 14px 0}
+  .hari-visual img{height:118px;border-radius:12px}
+}
+
+/* ---------- cetak: seluruh buku, halaman demi halaman ---------- */
+.cetak-lengkap{display:none}
+@media print{
+  @page{size:A4 portrait;margin:14mm 14mm 16mm}
+  .bilah-atas,.subkendali,.paging,.petunjuk-geser,footer,.selesai,.tautan-denah{display:none!important}
+  .panggung{display:none!important}
+  .cetak-lengkap{display:block!important}
+  html,body{background:#fff!important;color:#18251d;font-family:Karla,Arial,sans-serif;font-size:9.5pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{margin:0}
+  .cetak-lengkap{width:100%}
+  .cetak-halaman{break-after:page;min-height:calc(297mm - 30mm);box-sizing:border-box;padding:7mm 1mm 10mm;position:relative;overflow:hidden}
+  .cetak-halaman:last-child{break-after:auto}
+  .cetak-halaman>h1{font:800 23pt/1.08 "Zilla Slab",serif;color:#23301f;margin:10mm 0 7mm;border-bottom:3px solid #d99a17;padding-bottom:4mm}
+  .cetak-halaman.sampul-cetak{text-align:center;padding:25mm 8mm 12mm}
+  .cetak-halaman.sampul-cetak h1{border-bottom:0;margin:10mm 0 7mm}
+  .cetak-halaman.sampul-cetak img{display:block;width:48mm;height:30mm;object-fit:contain;margin:0 auto;border-radius:4mm}
+  .cetak-halaman>h2{font:800 16pt/1.15 "Zilla Slab",serif;color:#23301f;border-bottom:2px solid #d99a17;padding-bottom:3mm;margin:0 0 5mm}
+  .cetak-halaman>p{font-size:10pt;line-height:1.5}
+  .cetak-halaman:after{content:"Buku Saku Perkemahan Gabungan  •  " counter(page);position:absolute;bottom:2mm;left:0;right:0;text-align:center;font-size:7pt;color:#69756b;letter-spacing:.04em}
+  .cetak-halaman .sesi{break-inside:avoid;page-break-inside:avoid;border:1px solid #c9cfc7;border-left:3px solid #d99a17;border-radius:3mm;padding:3.5mm;margin:0 0 3.5mm;background:#fbfaf5}
+  .cetak-halaman .sesi>div:first-child{font:800 10.5pt/1.2 "Zilla Slab",serif;color:#23301f}
+  .cetak-halaman .sesi>div:nth-child(2){font-size:8pt;color:#526057;margin:1.5mm 0 2.5mm}
+  .cetak-halaman .sesi ol{margin:1.5mm 0;padding-left:5mm;font-size:8pt;line-height:1.35}
+  .cetak-halaman .sesi p{font-size:8pt;line-height:1.35;margin:1.5mm 0}
+  .cetak-halaman .sesi b{font-weight:700}
+  .cetak-halaman .sesi>div{break-inside:avoid}
+  .cetak-halaman .sesi b{color:#23301f}
+  .cetak-halaman .tema-panel,.cetak-halaman .foto-panel,.cetak-halaman .kepanitiaan-panel{max-width:none;padding:0}
+  .cetak-halaman .tema-hero{display:grid;grid-template-columns:1.15fr .85fr;padding:5mm;gap:5mm;box-shadow:none}
+  .cetak-halaman .tema-hero-art{height:58mm}
+  .cetak-halaman .tema-hero-art video{width:62mm;max-height:68mm}
+  .cetak-halaman .tema-grid{display:block;margin-top:5mm}
+  .cetak-halaman .tema-card{break-inside:avoid;box-shadow:none;padding:4mm;margin:3mm 0}
+  .cetak-halaman .sam-list{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+  .cetak-halaman .foto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}
+  .cetak-halaman .halaman-foto{padding:0!important;background:transparent!important}
+  .cetak-halaman .halaman-foto .tanggal{margin:0 0 3mm;font-size:8pt}
+  .cetak-halaman .foto-grid{grid-template-columns:repeat(4,1fr);gap:2.5mm}
+  .cetak-halaman .foto-grid-dokumen .foto-item:nth-child(1),
+  .cetak-halaman .foto-grid-dokumen .foto-item:nth-child(2),
+  .cetak-halaman .foto-grid-dokumen .foto-item:nth-child(11),
+  .cetak-halaman .foto-grid-dokumen .foto-item:nth-child(12){grid-column:auto}
+  .cetak-halaman .foto-grid-dokumen .foto-item:nth-child(1){grid-column:2}
+  .cetak-halaman .foto-grid-dokumen .foto-item:nth-child(2){grid-column:3}
+  .cetak-halaman .foto-grid-dokumen .foto-item:nth-child(3){grid-column:1}
+  .cetak-halaman .foto-grid-dokumen .foto-item:nth-child(11){grid-column:2}
+  .cetak-halaman .foto-grid-dokumen .foto-item:nth-child(12){grid-column:3}
+  .cetak-halaman .foto-item{break-inside:avoid;page-break-inside:avoid;margin:0;padding:1.5mm;border-radius:2mm;box-shadow:none}
+  .cetak-halaman .foto-item img{display:block;width:100%;height:25mm;max-height:25mm;aspect-ratio:auto;object-fit:contain;object-position:center;background:#a71919}
+  .cetak-halaman .foto-item figcaption{font-size:5pt;line-height:1.1}
+  .cetak-halaman .foto-item .foto-nama,.cetak-halaman .foto-item .foto-jabatan{font-size:5pt!important;transform:none!important}
+  .cetak-halaman .struktur-kelompok{display:block!important;break-inside:avoid}
+  .cetak-halaman .struktur-kelompok>summary{list-style:none}
+  .cetak-halaman .struktur-int{break-inside:avoid}
+  details{display:block}
+  .badan{display:block!important}
+}
+
+/* ---------- pembaruan jadwal & pengumuman ---------- */
+.pengumuman-luar{
+  position:sticky;top:58px;z-index:25;
+  background:var(--kanvas-2);border-bottom:2px solid var(--api);
+  box-shadow:0 3px 12px rgba(20,28,18,.14);
+}
+.pengumuman-luar[hidden]{display:none}
+.pengumuman{padding:13px 0 14px;display:flex;gap:14px;align-items:flex-start}
+.pengumuman-isi{flex:1;min-width:0}
+.pengumuman-judul{font:800 .82rem/1.2 Karla,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--st);margin:0 0 6px}
+.pengumuman-item{margin:0 0 6px;padding:2px 0 2px 12px;border-left:4px solid var(--api);font-size:1.04rem;line-height:1.45;font-weight:600}
+.pengumuman-item.penting{border-left-color:var(--st-batal)}
+.pengumuman-item small{display:block;color:var(--tinta-2);font-size:.78rem;font-weight:500;margin-top:3px}
+.pengumuman-tutup{flex:0 0 auto;background:var(--kartu);border:1px solid var(--garis-kuat);color:var(--tinta-2);border-radius:999px;font:700 .76rem Karla,sans-serif;padding:6px 12px;cursor:pointer}
+.info-sumber{font-size:.76rem;color:var(--tinta-2);margin:2px 0 6px}
+.info-sumber.gagal{color:var(--st)}
+.status-sesi{display:inline-block;font:700 .66rem/1 Karla,sans-serif;font-style:normal;letter-spacing:.04em;text-transform:uppercase;padding:3px 7px;border-radius:999px;border:1px solid currentColor;color:var(--st);vertical-align:middle;margin-left:6px}
+.status-sesi.st-dibatalkan{color:var(--st-batal)}
+.catatan-sesi{
+  display:block;margin-top:9px;padding:8px 10px;
+  border-left:3px solid var(--st);border-radius:0 7px 7px 0;
+  background:color-mix(in srgb,var(--st) 10%,var(--kartu));
+  color:var(--tinta);font:600 .86rem/1.4 Karla,sans-serif;
+}
+.catatan-sesi b{display:block;margin-bottom:2px;font:800 .68rem/1.2 Karla,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:var(--st)}
+.sesi.st-dibatalkan .jt,.sesi.st-dibatalkan .jam{text-decoration:line-through;opacity:.65}
+.toast-jadwal{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:60;background:var(--tinta);color:var(--kanvas);border-radius:999px;padding:9px 16px;font:600 .82rem Karla,sans-serif;box-shadow:0 4px 18px rgba(0,0,0,.25);display:flex;gap:10px;align-items:center;max-width:92vw}
+.toast-jadwal[hidden]{display:none}
+.toast-jadwal button{background:var(--api);color:#1c1608;border:0;border-radius:999px;padding:5px 12px;font:700 .78rem Karla,sans-serif;cursor:pointer}
+@media print{.pengumuman-luar,.toast-jadwal,.info-sumber{display:none!important}}
+</style>
+</head>
+<body>
+
+<div class="bilah-atas">
+  <div class="bilah-atas-isi">
+    <button class="merek" id="btnMerek" type="button" aria-label="Ke halaman sampul">
+      <svg width="16" height="22" viewBox="0 0 100 140" aria-hidden="true">
+        <path d="M65.76,10.02 C65.04,8.96 63.91,11.27 63.72,16.15 C63.53,21.02 64.63,35.30 64.63,39.27 C64.63,43.24 64.02,40.03 63.72,39.95 C63.42,39.88 63.45,40.86 62.81,38.82 C62.17,36.78 60.69,29.98 59.86,27.71 C59.03,25.44 58.54,24.05 57.82,25.22 C57.10,26.39 56.09,31.19 55.56,34.74 C55.03,38.29 54.35,43.17 54.65,46.53 C54.95,49.89 54.91,49.10 57.37,54.92 C59.83,60.74 67.27,75.74 69.39,81.45 C71.51,87.16 70.11,87.27 70.07,89.16 C70.03,91.05 69.54,92.03 69.16,92.79 C68.78,93.55 69.01,94.87 67.80,93.70 C66.59,92.53 63.90,87.88 61.90,85.76 C59.90,83.64 57.63,82.02 55.78,81.00 C53.93,79.98 53.09,79.87 50.79,79.64 C48.48,79.41 44.44,79.38 41.95,79.64 C39.46,79.90 38.02,80.28 35.83,81.22 C33.64,82.16 30.88,83.80 28.80,85.31 C26.72,86.82 25.40,88.10 23.36,90.29 C21.32,92.48 16.44,94.75 16.55,98.46 C16.66,102.16 22.11,109.42 24.04,112.52 C25.97,115.62 26.53,115.69 28.12,117.05 C29.71,118.41 31.33,119.74 33.56,120.68 C35.79,121.62 38.93,122.38 41.50,122.72 C44.07,123.06 46.75,122.91 48.98,122.72 C51.21,122.53 52.84,122.31 54.88,121.59 C56.92,120.87 59.37,119.92 61.22,118.41 C63.07,116.90 64.85,113.73 65.99,112.52 C67.12,111.31 67.05,109.57 68.03,111.16 C69.01,112.75 70.86,119.77 71.88,122.04 C72.90,124.31 73.32,124.12 74.15,124.76 C74.98,125.40 76.27,125.86 76.87,125.90 C77.48,125.94 77.67,125.48 77.78,124.99 C77.89,124.50 78.27,124.61 77.55,122.95 C76.83,121.29 74.53,117.77 73.47,115.01 C72.41,112.25 71.50,108.24 71.20,106.39 C70.90,104.54 71.05,104.96 71.66,103.90 C72.27,102.84 74.08,101.22 74.83,100.05 C75.58,98.88 75.96,98.27 76.19,96.87 C76.42,95.47 76.76,95.06 76.19,91.66 C75.62,88.26 73.36,80.20 72.79,76.46 C72.22,72.72 72.15,73.55 72.79,69.21 C73.43,64.86 76.00,54.32 76.64,50.39 C77.28,46.46 77.02,47.81 76.64,45.62 C76.26,43.43 75.81,41.08 74.38,37.23 C72.94,33.38 69.47,27.02 68.03,22.49 C66.59,17.95 66.48,11.08 65.76,10.02 Z" fill="#E09512"/>
+      </svg>
+      <span>Buku Saku Perkemahan</span>
+    </button>
+    <div class="navigasi-halaman" aria-label="Navigasi halaman">
+      <div class="daftar-halaman" id="daftarHalaman" role="group" aria-label="Pilih halaman"></div>
+    </div>
+    <div class="audio-kendali" role="group" aria-label="Kontrol audio">
+      <button class="audio-tombol" id="btnNarasi" type="button" aria-pressed="true" aria-label="Matikan narasi">◉ Narasi ON</button>
+    </div>
+  </div>
+</div>
+
+<div class="panggung" id="panggung">
+  <div class="lembar" id="lembar"></div>
+</div>
+
+<p class="petunjuk-geser">Geser ke kiri / kanan pada layar sentuh untuk membalik halaman</p>
+
+<footer class="bungkus">
+  <span id="catatanSimpan">Centang sesi yang sudah dijalani — tersimpan di perangkat ini.</span>
+  <span>
+    <button id="cetak">Cetak buku saku</button>
+    <button id="reset">Hapus centang</button>
+  </span>
+</footer>
+
+<div class="cetak-lengkap" id="cetakLengkap"></div>
+
+<div class="toast-jadwal" id="toastJadwal" hidden><span>Jadwal baru tersedia</span><button type="button" id="toastMuat">Muat</button></div>
+<!-- Versi query mencegah service worker lama menyajikan konfigurasi Google Sheet yang kedaluwarsa. -->
+<script src="config.js?v=20260919-4"></script>
+<script>
+const G = {siaga:"Siaga", penggalang:"Penggalang", penegak:"Penegak", pandega:"Pandega"};
+
+function pesertaText(g){
+  const nama = g.map(x=>G[x]);
+  if(nama.length===1) return nama[0];
+  if(nama.length===2) return nama.join(" dan ");
+  return nama.slice(0,-1).join(", ")+", dan "+nama[nama.length-1];
+}
+
+// PIC & CP per kegiatan. Isi dengan nama kegiatan persis seperti di jadwal, contoh:
+//   "Senam Kebugaran": {peran:"Koordinator Acara", cp:"Kak Andi - 08xx-xxxx-xxxx"},
+// Selama belum diisi, baris PIC & CP tidak ditampilkan.
+const picMap = {};
+
+const jadwalBawaan = [
+ {
+  "hari": "Registrasi",
+  "tanggal": "Kamis 24 September 2026",
+  "sesi": [
+   {
+    "j": "08:00 .s.d 17:00 WITA",
+    "n": "Penerimaan Peserta",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "Bumi Perkemahan",
+    "bawa": [
+     "Bebas Rapi"
+    ],
+    "petunjuk": [
+     "Bindamping melakukan registrasi secara online sejak surat permintaan peserta sudah diterima pada Platform/Situs Web yang telah disediakan panitia.",
+     "Bindamping Melapor Kepada Panitia dan Wajib menyetorkan mandat ASLI.",
+     "Bindamping Melakukan survei lokasi kavlingan didampingi panitia",
+     "Bindamping dan peserta Mendirikan tenda dan bergiat pribadi",
+     "Bindamping Memastikan seluruh kegiatan pemasangan tenda selesai",
+     "Panitia Mendampingi dan Mengarahkan Bindamping kelokasi Kavlingan"
+    ],
+    "pakaian": "Bebas Rapi",
+    "pic": "Juhriatin, S.Pd",
+    "anggota": "DKR Wawotobi",
+    "peserta": "Siaga, Penggalang, Penegak dan Pandega (S,G,T,D) dan unsur undangan atau simpatisan",
+    "d": "9 jam",
+    "langkah": [
+     "Hari kamis aktivitas masih berjalan normal sesuai tupoksi masing bagian."
+    ],
+    "pesertaText": "Siaga, Penggalang, Penegak dan Pandega (S,G,T,D) dan unsur undangan atau simpatisan",
+    "kunci": ""
+   },
+   {
+    "j": "20:00-22:00",
+    "n": "Pertemuan Pembina",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "AULA BUPER",
+    "bawa": [
+     "Uniforum Pramuka"
+    ],
+    "petunjuk": [
+     "Bindamping menuju titik kumpul untuk mengikuti kegiatan Jumpa pembina dan Meeting Kegiatan.",
+     "Panitia menyiapkan lokasi dan materi pertemuan"
+    ],
+    "pakaian": "Uniforum Pramuka",
+    "pic": "Hendra Bayu, S.Si CP. 082194848896",
+    "anggota": "DKR Wawotobi",
+    "peserta": "Seluruh Bindamping GUDEP",
+    "d": "2 jam",
+    "langkah": [
+     "Panitia dan para Bindamping akan melakukan diskusi serta Pemaparan teknis seluruh Kegiatan yang akan di laksanakan sebagai acuan kepada seluruh bindamping untuk mempersiapkan peserta didiknya."
+    ],
+    "pesertaText": "Seluruh Bindamping GUDEP",
+    "kunci": ""
+   }
+  ]
+ },
+ {
+  "hari": "Hari 1",
+  "tanggal": "Jumat 25 September 2026",
+  "sesi": [
+   {
+    "j": "04:00-06:00",
+    "n": "Giat Pribadi",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "Bebas Rapi memakai Kacu"
+    ],
+    "petunjuk": [
+     "Bindamping mengontrol seluruh peserta didiknya untuk melaksanakan giat pribadi",
+     "Panitia memastikan ketersediaan Musholah, MCK dan air bersih tersedia."
+    ],
+    "pakaian": "Bebas Rapi memakai Kacu",
+    "pic": "Benyamin, S.Pd.,M.Hum",
+    "anggota": "DKR Wawotobi",
+    "peserta": "Seluruh Warga Perkemahan",
+    "d": "2 jam",
+    "langkah": [
+     "Seluruh warga perkemahan bergiat sesuai dengan kebutuhan masing-masing dan jika ada kendala menghubungi PIC panitia sesuai yang tertera."
+    ],
+    "pesertaText": "Seluruh Warga Perkemahan",
+    "kunci": ""
+   },
+   {
+    "j": "06:00-07:00",
+    "n": "Senam Kebugaran",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "Lapangan BUPER",
+    "bawa": [
+     "Pakaian Olahraga Memakai Kacu"
+    ],
+    "petunjuk": [
+     "Bindamping mengarahkan peserta didiknya mengikuti senam",
+     "Bindamping memastikan sarapan pagi anggotanya tersedia setelah senam pagi.",
+     "Panitia mempersiapkan pelaksanaan senam pagi"
+    ],
+    "pakaian": "Pakaian Olahraga Memakai Kacu",
+    "pic": "Vida Evi Lestari, S.Pd",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D dan Bindamping",
+    "d": "1 jam",
+    "langkah": [
+     "Seluruh warga perkemahan melaksanakan senam pagi bersama, Bindamping mengatur jadwal kurvei tenda dan menyiapkan sarapan pagi untuk anggotanya. Dapur panitia menyiapkan sarapan pagi untuk panitia."
+    ],
+    "pesertaText": "S/G/T/D dan Bindamping",
+    "kunci": ""
+   },
+   {
+    "j": "07:00-08:30",
+    "n": "Apel Pagi Dan Seleksi Petugas Upacara",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "Uniform Pramuka"
+    ],
+    "petunjuk": [
+     "Bindamping mengarahkan peserta didiknya mengikuti apel pagi dan di arahkan kelapangan Apel Pagi",
+     "Panitia melaksanakan apel pagi dan seleksi petugas upacara"
+    ],
+    "pakaian": "Uniform Pramuka",
+    "pic": "Asmada",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D",
+    "d": "1 jam 30 menit",
+    "langkah": [
+     "Apel pagi dipimpin secara bergantian oleh Andalan, pimpinan apel memberikan arahan terkait dengan kegiatan yang akan dilaksanakan dan atau motivasi kepramukaan. Setelah apel pagi peserta Siaga dan Penegak di persilahkan kembali ketenda, sedangkan peserta Penggalang mengikuti seleksi petugas upacara. Panitia akan memilih dan langsung melakukan pelatihan husus."
+    ],
+    "pesertaText": "S/G/T/D",
+    "kunci": ""
+   },
+   {
+    "j": "08:30-11:00",
+    "n": "Gladi Devile Dan Upacara",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "Bebas rapi memakai kacu"
+    ],
+    "petunjuk": [
+     "Bindamping mengarahkan seluruh peserta didik menuju titik kumpul melaksanakan GLADI Devile dan Upacara",
+     "Marching Band menyesuaikan menuju titik kumpul",
+     "Tim Penari menyesuaikan menuju titik kumpul",
+     "TIM Tongkat Pora menyesuaikan menuju titik kumpul",
+     "Panitia mengarahkan dan melaksanakan GLADI"
+    ],
+    "pakaian": "Bebas rapi memakai kacu",
+    "pic": "Alpian, S.Pd, Rosmaini, S.Pd dan Kasim Lawogo, S.Pd.,M.Pd",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D, Marcing band dan Penari",
+    "d": "2 jam 30 menit",
+    "langkah": [
+     "Seluruh proses Gladi akan di atur oleh panitia dimulai dari mengarahkan peserta ke titik kumpul devile, mengatur susunan barisan, berjalan masuk dari titik kumpul ke lapangan upacara dan langsung membentuk barisan angkare.",
+     "Selanjutnya Tim penari  masuk menyambut undangan, para undangan dipersilahkan ke panggung, Proses Upacara di Mulai, penampilan pertunjukan pionering, Tongkat Pora Pramuka, musik bambu, marching band dan lomba bakiak untuk para andalan (opsional)."
+    ],
+    "pesertaText": "S/G/T/D, Marcing band dan Penari",
+    "kunci": ""
+   },
+   {
+    "j": "11:00-14:30",
+    "n": "Ishoma (Jumat)",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER DAN MASJID",
+    "bawa": [
+     "Bebas Rapi"
+    ],
+    "petunjuk": [
+     "Bindamping mengarahkan peserta didik untuk istirahat, sholat jumat dan makan siang.",
+     "Panitia memastikan masjid dan MCK tersedia."
+    ],
+    "pakaian": "Bebas Rapi",
+    "pic": "Benyamin, S.Pd.,M.Hum",
+    "anggota": "DKR Wawotobi",
+    "peserta": "Seluruh Warga Perkemahan",
+    "d": "3 jam 30 menit",
+    "langkah": [
+     "Seluruh warga perkemahan ISHOMA, panitia tetap berjalan dengan tugas masing-masing"
+    ],
+    "pesertaText": "Seluruh Warga Perkemahan",
+    "kunci": ""
+   },
+   {
+    "j": "14:30-16:30",
+    "n": "Seremoni Pembukaan Kegiatan",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping mempersiapkan peserta didik untuk mengikutik Upacara Pembukaan. Menuju titik kumpul berjalan sesuai hasil GLADI.",
+     "Marcing band, Tim Penari, Musik Bambu dan Tongkat Pora Pramuka Menuju titik kumpul berjalan sesuai hasil GLADI.",
+     "Undangan menuju titik kumpul yang akan di arahkan oleh panitia",
+     "Panitia mengarahkan, mengontrol dan memastikan semua berjalan sesuai perencanaan.",
+     "Hiburan Seremoni :",
+     "- Lomba Bakiak antar bindamping dan para andalan (opsional)",
+     "- Pionering (opsional)",
+     "- Tongkat Pora Pramuka (opsional)",
+     "- Marching Band (opsional)",
+     "- Musik Bambu (opsional)",
+     "- DLL"
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Sudarmin S.Pd.,M.Pd dan Hasdar, S.Pd",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D, BINDAMPING DAN SELURUH UNDANGAN",
+    "d": "2 jam",
+    "langkah": [
+     "Seluruh warga perkemahan melaksanakan seremoni upacara pembukaan sesuai dengan Hasil GLADI."
+    ],
+    "pesertaText": "S/G/T/D, BINDAMPING DAN SELURUH UNDANGAN",
+    "kunci": ""
+   },
+   {
+    "j": "16:30-17:30",
+    "n": "Kunjungan Dan Penilaian Tenda",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "Seragam atau pakaian sesuai petunjuk panitia"
+    ],
+    "petunjuk": [
+     "Bindamping Bersama-sama peserta didiknya membuat tenda dengan indah dan selalu bersih sejak pembukaan sampai dengan waktu penilaian.",
+     "Tim Juri dan Para Undangan Berjalan kunjungan tenda",
+     "Panitia berkoordinasi dengan Ketua-ketua kwarran waktu penilaian tenda"
+    ],
+    "pakaian": "",
+    "pic": "ABD. HAFIED",
+    "anggota": "",
+    "peserta": "Tenda GUDEP",
+    "d": "1 jam",
+    "langkah": [
+     "Penilaian tenda akan selalu berjalan seiring berjalannya kegiatan dengan pantauan dari dewan juri setiap saat dan akan dilakukan kunjungan langsung ke tenda tenda saat setelah Upacara Pembukaan."
+    ],
+    "pesertaText": "Tenda GUDEP",
+    "kunci": ""
+   },
+   {
+    "j": "17:30-19:30",
+    "n": "Ishoma (Ba’Da Magrib)",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "Bebas Rapi memakai kacu"
+    ],
+    "petunjuk": [
+     "Bindamping mengarahkan peserta didik untuk istirahat, sholat, makan malam. Menyiapkan peserta didiknya untuk mengikuti malam selamat datang dan seni cikal",
+     "Panitia memastikan masjid/musholah dan MCK tersedia."
+    ],
+    "pakaian": "Bebas Rapi memakai kacu",
+    "pic": "Benyamin, S.Pd.,M.Hum",
+    "anggota": "",
+    "peserta": "S/G/T/D",
+    "d": "2 jam",
+    "langkah": [
+     "Seluruh warga perkemahan ISHOMA, panitia tetap berjalan dengan tugas masing-masing."
+    ],
+    "pesertaText": "S/G/T/D",
+    "kunci": ""
+   },
+   {
+    "j": "19:30-23:00",
+    "n": "Malam Cikal Pagelaran Seni",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "PANGGUNG UTAMA BUPER",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping berkoordinasi dengan kwarran masing-masing, mengutus 1 perwakilan penampilan seni.",
+     "Bindamping tetap mengontrol seluruh anggotanya dan selalu melakukan koordinasi kepada panitia, bankam, bankes untuk menghindari hal-hal yang tidak diinginkan.",
+     "Tim Juri adalah Ketua Kwarran Wawotobi, Anggaberi, Meluhu dan Amonggedo",
+     "Bankam memastikan seluruh area perkemahan tetap terpantau dan berkeliling tenda.",
+     "Bankes memastikan anggota selalu siap di posko kesehatan",
+     "Panitia memastikan seluruh sarana pendukung kegiatan berjalan : Penerangan, stage panggung, Sound system, Juri, Peserta dll."
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Juniwanto, S.Ag",
+    "anggota": "DKR Wawotobi",
+    "peserta": "1 PERWAKILAN PERKWARRAN",
+    "d": "3 jam 30 menit",
+    "langkah": [
+     "Seluruh warga perkemahan mengikuti malam Seni Cikal, panitia tetap berjalan dengan tugas masing-masing."
+    ],
+    "pesertaText": "1 PERWAKILAN PERKWARRAN",
+    "kunci": ""
+   },
+   {
+    "j": "23:00",
+    "n": "Jam Malam",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "SELURUH AREA BUPER",
+    "bawa": [
+     "Bebas Rapi"
+    ],
+    "petunjuk": [
+     "Bindamping memastikan semua peserta didik telah berada di tenda masing-masing, melakukan evaluasi harian dan mempersiapkan untuk peserta didik untuk kegiatan besoknya..",
+     "Bankam menjalankan tugas sisir tenda.",
+     "Bankes memastikan ada anggota selalu siap di posko kesehatan",
+     "Panitia berkoordinasi dengan bankam dan Bankes."
+    ],
+    "pakaian": "Bebas Rapi",
+    "pic": "Kasmarudin, Sp.d",
+    "anggota": "Bantuan Keamanan",
+    "peserta": "S/G/T/D, BINDAMPING DAN SELURUH WARGA PERKEMAHAN",
+    "d": "Semalam",
+    "langkah": [
+     "Seluruh warga perkemahan mematuhi Jam Malam, panitia melakukan koordinasi antar Seksi dan melakukan Rapat Evaluasi yang dipimpin Ketua Panitia dan membahas persiapan kegiatan besoknya."
+    ],
+    "pesertaText": "S/G/T/D, BINDAMPING DAN SELURUH WARGA PERKEMAHAN",
+    "kunci": ""
+   }
+  ]
+ },
+ {
+  "hari": "Hari 2",
+  "tanggal": "Sabtu 26 September 2026",
+  "sesi": [
+   {
+    "j": "04:00-06:00",
+    "n": "Giat Pribadi",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "Bebas Rapi memakai Kacu"
+    ],
+    "petunjuk": [
+     "Bindamping mengontrol seluruh peserta didiknya untuk melaksanakan giat pribadi",
+     "Panitia memastikan ketersediaan Musholah, MCK dan air bersih bisa terpakai."
+    ],
+    "pakaian": "Bebas Rapi memakai Kacu",
+    "pic": "Benyamin, S.Pd.,M.Hum",
+    "anggota": "DKR Wawotobi",
+    "peserta": "Seluruh Warga Perkemahan",
+    "d": "2 jam",
+    "langkah": [
+     "Seluruh warga perkemahan bergiat sesuai dengan kebutuhan masing-masing dan jika ada kendala menghubungi PIC panitia sesuai yang tertera."
+    ],
+    "pesertaText": "Seluruh Warga Perkemahan",
+    "kunci": ""
+   },
+   {
+    "j": "06:00-07:00",
+    "n": "Senam Kebugaran",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "Lapangan BUPER",
+    "bawa": [
+     "Pakaian Olahraga Memakai Kacu"
+    ],
+    "petunjuk": [
+     "Bindamping mengarahkan peserta didiknya mengikuti senam.",
+     "Bindamping memastikan sarapan pagi anggotanya tersedia setelah senam pagi.",
+     "Panitia mempersiapkan pelaksanaan senam pagi"
+    ],
+    "pakaian": "Pakaian Olahraga Memakai Kacu",
+    "pic": "Vida evi lestari, S.Pd",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D dan Warga Perkemahan",
+    "d": "1 jam",
+    "langkah": [
+     "Seluruh warga perkemahan melaksanakan senam pagi bersama, Bindamping mengatur jadwal kurvei tenda dan menyiapkan sarapan pagi untuk anggotanya. Dapur panitia menyiapkan sarapan pagi untuk panitia."
+    ],
+    "pesertaText": "S/G/T/D dan Warga Perkemahan",
+    "kunci": ""
+   },
+   {
+    "j": "07:00-08:00",
+    "n": "Apel Pagi",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "Uniform Pramuka"
+    ],
+    "petunjuk": [
+     "Bindamping mengarahkan peserta didiknya mengikuti apel pagi dan di arahkan ke lapangan apel.",
+     "Panitia melaksanakan apel pagi dan berkoordinasi kepada Pimpinan Apel Pagi"
+    ],
+    "pakaian": "Uniform Pramuka",
+    "pic": "Asmada Cp. 082192992033",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D",
+    "d": "1 jam",
+    "langkah": [
+     "Apel pagi dipimpin secara bergantian oleh Andalan, pimpinan apel memberikan arahan terkait dengan kegiatan yangbakan dilaksanakan dan atau motivasi kepramukaan."
+    ],
+    "pesertaText": "S/G/T/D",
+    "kunci": ""
+   },
+   {
+    "j": "08:00-11:30",
+    "n": "TIM A : Lomba Cermat Cermat Pramuka",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "Panggung Buper",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping memilih dan melakukan pembekalan pendalaman materi kepada peserta didiknya yang layak untuk mengikuti Lomba.",
+     "Panitia menyiapkan seluruh persiapan dan melaksanakan Lomba",
+     "Panitia mempersiapkan Lokasi, Aturan, Dewan Juri, dan Soal-soal yang terverifikasi."
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Mustamil Robinson, SH Cp. 082291555590",
+    "anggota": "DKR Wawotobi",
+    "peserta": "G (2 PA dan 1 PI per GUDEP)",
+    "d": "3 jam 30 menit",
+    "langkah": [
+     "Materi soal: 50 % Kepramukaan dan 50 % Pengetahuan umum.",
+     "Kegiatan diarahkan untuk menguji pengetahuan serta kecakapan kepramukaan serta kecakapan pengetahuan umum secara edukatif. Panitia akan memandu teknis kegiatan."
+    ],
+    "pesertaText": "G (2 PA dan 1 PI per GUDEP)",
+    "kunci": ""
+   },
+   {
+    "j": "08:00-11:30",
+    "n": "Tim B : Games In My Camp",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "LAPANGAN BUPER",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping memilih, mengutus dan melakukan pembekalan pendalaman materi kepada peserta didiknya yang layak untuk mengikuti Lomba.",
+     "Panitia menyiapkan seluruh persiapan, lokasi dan perlengkapan lomba"
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Iron Maulana Cp. 085241753374",
+    "anggota": "DKR Wawotobi",
+    "peserta": "G/ dan T/D",
+    "d": "3 jam 30 menit",
+    "langkah": [
+     "Permainan ini dilaksanakan di area perkemahan dengan sistem kelompok. Tujuannya melatih peserta didik berinteraksi, saling membantu, menciptakan harmonisasi gotong royong, dan membangun kerja tim.",
+     "Jenis Lomba:",
+     "Siaga (S) : Estapet Air dan Keseimbangan Bola (8 orang PA/PI perwakilan pergudep/Perkwarran)",
+     "Penggalang (G) : Sendal Bakiak, Estafet pinpong (8 orang PA/PI perwakilan pergudep/Perkwarran)",
+     "Penegak (T) : Sendal bakiak, Water Tower (8 orang PA/PI perwakilan pergudep/Perkwarran)"
+    ],
+    "pesertaText": "G/ dan T/D",
+    "kunci": ""
+   },
+   {
+    "j": "08:00-11:30",
+    "n": "Tim C : Pembelajaran Sinematografi",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "AULA BUPER",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping memilih dan mengutus peserta didiknya untuk mengikuti sosialisasi sebanyak maksimal 5 PA dan 5 PI.",
+     "Komunitas Sinematografi menyiapkan pemateri, Bahan Materi dan berkoordinasi dengan panitia.",
+     "Panitia menyiapkan tempat, sound system, proyektor jika di perlukan dan berkoordinasi dengan pihak Komunitas Sinematografi kab Konawe."
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Erick Al Hadits, SKM CP. 087796756436",
+    "anggota": "DKR Wawotobi",
+    "peserta": "G/ dan T/D",
+    "d": "3 jam 30 menit",
+    "langkah": [
+     "Jenis Materi : Edukasi & Praktek",
+     "Tujuan sosialisasi memberikan edukasi kepada peserta didik terkait identifikasi risiko, kesiapsiagaan, mitigasi, tanda peringatan, jalur evakuasi, titik kumpul, perlengkapan siaga bencana, komunikasi darurat dan tindakan setelah bencana"
+    ],
+    "pesertaText": "G/ dan T/D",
+    "kunci": ""
+   },
+   {
+    "j": "14:00-15:30",
+    "n": "Tim A : Sosialisasi Kebencanaan",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "LAPANGAN BUPER",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping memilih dan mengutus peserta didiknya untuk mengikuti sosialisasi 5 PA dan 5 PI.",
+     "Instansi BPBD menyiapkan pemateri dan bahan materi berkoordinasi dengan panitia.",
+     "Panitia menyiapkan tempat, sound system, proyektor jika di perlukan dan berkoordinasi dengan pihak instansi BPBD kab Konawe."
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Ali Qadri, SP Cp. 082129933558",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/ dan T/D",
+    "d": "1 jam 30 menit",
+    "langkah": [
+     "Jenis Materi : Edukasi Dan Praktek",
+     "Tujuan sosialisasi memberikan edukasi kepada peserta didik terkait identifikasi risiko, kesiapsiagaan, mitigasi, tanda peringatan, jalur evakuasi, titik kumpul, perlengkapan siaga bencana, komunikasi darurat dan tindakan setelah bencana."
+    ],
+    "pesertaText": "S/G/ dan T/D",
+    "kunci": ""
+   },
+   {
+    "j": "14:00-15:30",
+    "n": "Tim B : Sosialisasi Narkotika",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "LAPANGAN BUPER",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping memilih dan mengutus peserta didiknya sebanyak 4 PA dan 4 PI untuk mengikuti sosialisasi.",
+     "Instansi BNN menyiapkan pemateri, bahan Materi dan berkoordinasi dengan panitia.",
+     "Panitia menyiapkan tempat, sound system, proyektor jika di perlukan dan berkoordinasi dengan pihak Instansi BNN."
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Fahri Rahmat, SHi.,MH CP. 082197896547",
+    "anggota": "DKR Wawotobi",
+    "peserta": "G dan T/D",
+    "d": "1 jam 30 menit",
+    "langkah": [
+     "Jenis Materi : Edukasi",
+     "Tujuan sosialisasi memberikan edukasi kepada peserta didik terkait bahaya penyalahgunaan narkotika, dampaknya bagi kesehatan dan masa depan, cara menolak ajakan, serta pentingnya hidup sehat dan lingkungan yang mendukung."
+    ],
+    "pesertaText": "G dan T/D",
+    "kunci": ""
+   },
+   {
+    "j": "15:30-17:00",
+    "n": "Tim A : Sosialisasi Hiv Dan Aids",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "LAPANGAN BUPER",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping memilih dan mengutus peserta didiknya untuk mengikuti sosialisasi sebanyak 4 PA dan 4 PI..",
+     "Dinas Kesehatan menyiapkan pemateri, bahan materi dan berkoordinasi dengan panitia.",
+     "Panitia menyiapkan tempat, sound system, proyektor jika di perlukan dan berkoordinasi dengan pihak Dinas Kesehatan kab Konawe."
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "dr. Citra (Kapus Wawotobi)",
+    "anggota": "DKR Wawotobi",
+    "peserta": "G/ dan T/D",
+    "d": "1 jam 30 menit",
+    "langkah": [
+     "Jenis Materi : Edukasi",
+     "Tujuan sosialisasi memberikan edukasi kepada peserta didik terkait pengenalan HIV/AIDS, penularan dan pencegahan, perilaku hidup sehat, pentingnya informasi yang benar, serta pengurangan stigma. Sesi ditutup dengan tanya jawab"
+    ],
+    "pesertaText": "G/ dan T/D",
+    "kunci": ""
+   },
+   {
+    "j": "15:30-17:00",
+    "n": "Tim B : Sosialisasi Bahaya Balapan Liar",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "LAPANGAN BUPER",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping memilih dan mengutus peserta didiknya untuk mengikuti sosialisasi.",
+     "Dirlantas (polres atau Polsek) menyiapkan pemateri, draf Materi dan berkoordinasi dengan panitia.",
+     "Panitia menyiapkan tempat, sound system, proyektor jika di perlukan dan berkoordinasi dengan pihak Dirlantas Kab Konawe."
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Brigpol Aprilia, SH.,MH",
+    "anggota": "",
+    "peserta": "G/ dan T/D",
+    "d": "1 jam 30 menit",
+    "langkah": [
+     "Jenis Materi : Edukasi",
+     "Tujuan sosialisasi memberikan edukasi kepada peserta didik terkait pengenalan tertib berlalu lintas, dampak lakalantas, penggunaan atribut berkendara yang terstandar, pengenalan rambu jalan serta sanksi pelanggaran berlalu lintas."
+    ],
+    "pesertaText": "G/ dan T/D",
+    "kunci": ""
+   },
+   {
+    "j": "19:00-21:00",
+    "n": "Pengukuhan Pengurus Kwarran",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "LAPANGAN BUPER",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Pengurus Kwarran Wawotobi, Anggaberi, Meluhu dan Amonggedo Berkumpul 20 menit sebelum pelantikan untuk melaksanakan Gladi Kotor.",
+     "Kwarcab Melaksanakan Gladi dan Berkoordinasi dengan Pengurus pengurus Kwarran",
+     "Panitia Membantu dan berkoordinasi dengan Pihak Kwarccab Cq Dewan Kerja Cabang.."
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Ramadan, S.Pd.,M.Si dan Mawarni, S.Pd",
+    "anggota": "Kwarcab Cq DKC KOnawe",
+    "peserta": "Pengurus Kwarran Wawotobi, Kwarran Anggaberi, Kwarran Meluhu dan Kwarran Amonggedo masa bakti 2026-2031",
+    "d": "2 jam",
+    "langkah": [
+     "Pengukuhan Pengurus Kwartir Ranting Gabungan Wawotobi, Meluhu, Anggaberi dan Amonggedo akan di laksanakan oleh kwartir Cabang Konawe. Seluruh Peserta Pengukuhan diharapkan sudah hadir sebelum pelaksanaan Pengukuhan. Teknis Akan diatur Oleh Kwartir Cabang."
+    ],
+    "pesertaText": "Pengurus Kwarran Wawotobi, Kwarran Anggaberi, Kwarran Meluhu dan Kwarran Amonggedo masa bakti 2026-2031",
+    "kunci": ""
+   },
+   {
+    "j": "21:00-23:00",
+    "n": "Malam Penutupan",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "Bebas Rapi Meakai Kacu"
+    ],
+    "petunjuk": [
+     "Bindamping dan peserta didiknya mengikuti seluruh rangkaian acara malam penutupan.",
+     "Bindamping tetap mengontrol seluruh pesert didiknya dan selalu melakukan koordinasi kepada panitia, bankam, bankes untuk menghindari hal-hal yang tidak diinginkan.",
+     "Bankam memastikan seluruh area perkemahan tetap terpantau dan berkeliling tenda.",
+     "Bankes memastikan anggota selalu siap di posko kesehatan",
+     "Panitia memastikan seluruh sarana pendukung kegiatan berjalan : Penerangan, stage panggung, Sound system, kegiatan dll."
+    ],
+    "pakaian": "Bebas Rapi Meakai Kacu",
+    "pic": "Seluruh Panitia",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D, BINDAMPING DAN SELURUH WARGA PERKEMAHAN",
+    "d": "2 jam",
+    "langkah": [
+     "Seluruh warga perkemahan mengikuti seremoni malam penutupan, panitia tetap berjalan dengan tugas masing-masing dan saling berkoordinasi."
+    ],
+    "pesertaText": "S/G/T/D, BINDAMPING DAN SELURUH WARGA PERKEMAHAN",
+    "kunci": ""
+   },
+   {
+    "j": "23:00",
+    "n": "Jam Malam",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "AREA BUPER",
+    "bawa": [
+     "Bebas Rapi"
+    ],
+    "petunjuk": [
+     "Bindamping memastikan semua peserta didik telah berada di tenda masing-masing, melakukan evaluasi harian dan mempersiapkan untuk peserta didik untuk kegiatan besoknya..",
+     "Bankam menjalankan tugas sisir tenda.",
+     "Bankes memastikan ada anggota selalu siap di posko kesehatan",
+     "Panitia berkoordinasi dengan bankam dan Bankes."
+    ],
+    "pakaian": "Bebas Rapi",
+    "pic": "",
+    "anggota": "",
+    "peserta": "S/G/T/D, BINDAMPING DAN SELURUH WARGA PERKEMAHAN",
+    "d": "Semalam",
+    "langkah": [
+     "Seluruh warga perkemahan mematuhi Jam Malam, panitia melakukan koordinasi antar Seksi dan melakukan Rapat Evaluasi dan persiapan kegiatan besoknya."
+    ],
+    "pesertaText": "S/G/T/D, BINDAMPING DAN SELURUH WARGA PERKEMAHAN",
+    "kunci": ""
+   }
+  ]
+ },
+ {
+  "hari": "Hari 3",
+  "tanggal": "Minggu 27 September 2026",
+  "sesi": [
+   {
+    "j": "04:00-06:00",
+    "n": "Giat Pribadi",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "Bebas Rapi memakai Kacu"
+    ],
+    "petunjuk": [
+     "Bindamping mengontrol seluruh peserta didiknya untuk melaksanakan giat pribadi",
+     "Panitia memastikan ketersediaan Musholah, MCK dan air bersih bisa terpakai."
+    ],
+    "pakaian": "Bebas Rapi memakai Kacu",
+    "pic": "Benyamin, S.Pd.,M.Hum",
+    "anggota": "DKR Wawotobi",
+    "peserta": "Seluruh Warga Perkemahan",
+    "d": "2 jam",
+    "langkah": [
+     "Seluruh warga perkemahan bergiat sesuai dengan kebutuhan masing-masing dan jika ada kendala menghubungi PIC panitia sesuai yang tertera."
+    ],
+    "pesertaText": "Seluruh Warga Perkemahan",
+    "kunci": ""
+   },
+   {
+    "j": "06:00-07:00",
+    "n": "Senam Kebugaran",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "Lapangan BUPER",
+    "bawa": [
+     "Pakaian Olahraga Memakai Kacu"
+    ],
+    "petunjuk": [
+     "Bindamping mengarahkan peserta didiknya mengikuti senam.",
+     "Bindamping memastikan sarapan pagi anggotanya tersedia setelah senam pagi.",
+     "Panitia mempersiapkan pelaksanaan senam pagi"
+    ],
+    "pakaian": "Pakaian Olahraga Memakai Kacu",
+    "pic": "Vida evi lestari, S.Pd",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D dan Warga Perkemahan",
+    "d": "1 jam",
+    "langkah": [
+     "Seluruh warga perkemahan melaksanakan senam pagi bersama, Bindamping mengatur jadwal kurvei tenda dan menyiapkan sarapan pagi untuk anggotanya. Dapur panitia menyiapkan sarapan pagi untuk panitia."
+    ],
+    "pesertaText": "S/G/T/D dan Warga Perkemahan",
+    "kunci": ""
+   },
+   {
+    "j": "07:00-08:00",
+    "n": "Apel Pagi",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "Uniform Pramuka"
+    ],
+    "petunjuk": [
+     "Bindamping mengarahkan peserta didiknya mengikuti apel pagi dan di arahkan ke lapangan apel.",
+     "Panitia melaksanakan apel pagi dan berkoordinasi kepada Pimpinan Apel Pagi"
+    ],
+    "pakaian": "Uniform Pramuka",
+    "pic": "Asmada Cp. 082192992033",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D",
+    "d": "1 jam",
+    "langkah": [
+     "Apel pagi dipimpin secara bergantian oleh Andalan, pimpinan apel memberikan arahan terkait dengan kegiatan yangbakan dilaksanakan dan atau motivasi kepramukaan."
+    ],
+    "pesertaText": "S/G/T/D",
+    "kunci": ""
+   },
+   {
+    "j": "08:00-10:00",
+    "n": "Penanaman Pohon",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "LAPANGAN LASANDARA",
+    "bawa": [
+     "Uniform Pramuka"
+    ],
+    "petunjuk": [
+     "Bindamping mengarahkan perwakilan peserta didiknya sebanya 1 PA dan 1 PI mengikuti Penanaman Pohon di arahkan ke titik kumpul",
+     "Panitia menyiapkan transportasi, memastikan lokasi siap dan menyiapkan pohon, berkoordinasi dengan para seksi terkait."
+    ],
+    "pakaian": "Uniform Pramuka",
+    "pic": "Ketua DKR Wawotobi",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D",
+    "d": "2 jam",
+    "langkah": [
+     "Kegiatan penanaman pohon dilaksanakan dialun-alun Kecamatan Wawotobi (Lapangan Lasandara) yang di ikuti oleh peserta, pendamping dan panitia. Penanaman pohon merupakan kiasan tumbuh kembang pengetahuan dan peradaban anggota pramuka."
+    ],
+    "pesertaText": "S/G/T/D",
+    "kunci": ""
+   },
+   {
+    "j": "08:00-10:00",
+    "n": "Wisata & Edukasi : RUMAH ADAT TOLAKI DAN PENINGGALAN BUDAYA",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "Kec Meluhu",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping memilih dan mengutus peserta didiknya sebanyak 2 PA dan 2 PI diarahkan ke titik Kumpul..",
+     "Pihak Tujuan melakukan kesiapan kunjungan dan memberikan edukasi kepada peserta didik baik berupa penjelasan lisan maupun tanya jawab.",
+     "Panitia berkoordinasi kepada seksi terkait, memastikan, ketersediaan transportasi H-1 dan menghitung jumlah peserta yang akan di bawa."
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Jiansyah Latif, S.Sos Cp. 082357112228",
+    "anggota": "DKR Wawotobi",
+    "peserta": "G/ dan T/D, Bindamping",
+    "d": "2 jam",
+    "langkah": [
+     "Tujuan Kegiatan ini memberikan edukasi secara langsung kepada peserta didik untuk menumbuhkan jiwa Karakter, Identitas, Nasionalisme, Patriotisme Keterampilan kerja, dunia kerja dan kewirausahaan."
+    ],
+    "pesertaText": "G/ dan T/D, Bindamping",
+    "kunci": ""
+   },
+   {
+    "j": "10:00 WITA",
+    "n": "Upacara Penutupan",
+    "g": [
+     "siaga",
+     "penggalang",
+     "penegak",
+     "pandega"
+    ],
+    "t": "BUPER",
+    "bawa": [
+     "UNIFORM PRAMUKA"
+    ],
+    "petunjuk": [
+     "Bindamping mempersiapkan peserta didik untuk mengikutik Upacara Penutupan.",
+     "Undangan menuju panggung Upacara",
+     "Panitia mengarahkan, mengontrol dan memastikan semua berjalan sesuai perencanaan."
+    ],
+    "pakaian": "UNIFORM PRAMUKA",
+    "pic": "Sudarmin S.Pd.,M.Pd dan Hasdar, S.Pd",
+    "anggota": "DKR Wawotobi",
+    "peserta": "S/G/T/D, BINDAMPING DAN SELURUH UNDANGAN",
+    "d": "—",
+    "langkah": [
+     "Seluruh warga perkemahan melaksanakan upacara penutupan."
+    ],
+    "pesertaText": "S/G/T/D, BINDAMPING DAN SELURUH UNDANGAN",
+    "kunci": ""
+   }
+  ]
+ }
+];
+
+/* Petunjuk pelaksanaan dari dokumen teknis panitia. Ditampilkan bersama teknis
+   kegiatan agar bindamping dan peserta memiliki satu acuan di setiap sesi. */
+function klasifikasiGolongan(teks, fallback){
+  const x = String(teks || '').toUpperCase();
+  const hasil = [];
+  if(/(^|[^A-Z])S([^A-Z]|$)|SIAGA|S\/G|S\/G\/T\/D/.test(x)) hasil.push('siaga');
+  if(/(^|[^A-Z])G([^A-Z]|$)|PENGGALANG|G\/T|S\/G/.test(x)) hasil.push('penggalang');
+  if(/(^|[^A-Z])T([^A-Z]|$)|PENEGAK|T\/D|G\/T/.test(x)) hasil.push('penegak');
+  if(/(^|[^A-Z])D([^A-Z]|$)|PANDEGA|T\/D|S\/G\/T\/D/.test(x)) hasil.push('pandega');
+  return hasil.length ? hasil : (fallback || ['siaga','penggalang','penegak','pandega']);
+}
+jadwalBawaan.forEach(h=>h.sesi.forEach(s=>{
+  s.g = klasifikasiGolongan(s.pesertaText || s.peserta, s.g);
+}));
+let jadwal = jadwalBawaan;
+
+const petunjukKegiatan = {
+ "Giat Pribadi":[
+  "Bindamping mengontrol seluruh peserta didiknya untuk melaksanakan giat pribadi.",
+  "Panitia memastikan musala, MCK, dan air bersih tersedia.",
+  "Jika ada kendala, hubungi PIC panitia sesuai daftar kontak."
+ ],
+ "Senam Kebugaran":[
+  "Bindamping mengarahkan peserta didiknya mengikuti senam.",
+  "Bindamping memastikan sarapan anggota tersedia setelah senam pagi.",
+  "Panitia mempersiapkan pelaksanaan senam pagi."
+ ],
+ "Apel Pagi & Seleksi Petugas Upacara":[
+  "Bindamping mengarahkan peserta mengikuti apel pagi dan menuju titik kumpul.",
+  "Panitia melaksanakan apel pagi dan seleksi petugas upacara.",
+  "Peserta Penggalang yang terpilih mengikuti pelatihan khusus setelah seleksi."
+ ],
+ "Apel Pagi":[
+  "Bindamping mengarahkan peserta mengikuti apel pagi dan menuju titik kumpul.",
+  "Panitia melaksanakan apel pagi dan berkoordinasi dengan pimpinan apel."
+ ],
+ "Gladi Devile & Upacara":[
+  "Bindamping mengarahkan seluruh peserta menuju titik kumpul gladi devile dan upacara.",
+  "Marching band dan tim penari menuju titik kumpul sesuai arahan panitia.",
+  "Panitia mengatur susunan barisan, rute masuk, dan formasi upacara."
+ ],
+ "ISHOMA Jumat":[
+  "Bindamping mengarahkan peserta untuk istirahat, sholat Jumat, dan makan siang.",
+  "Panitia memastikan masjid dan MCK tersedia."
+ ],
+ "Seremoni Pembukaan Kegiatan":[
+  "Bindamping mempersiapkan peserta mengikuti upacara pembukaan dan menuju titik kumpul sesuai hasil gladi.",
+  "Marching band dan tim penari menuju titik kumpul sesuai hasil gladi.",
+  "Undangan menuju titik kumpul dengan arahan panitia.",
+  "Panitia mengarahkan, mengontrol, dan memastikan seremoni berjalan sesuai perencanaan.",
+  "Hiburan opsional: lomba bakiak, pionering, marching band, musik bambu, dan penampilan lain."
+ ],
+ "ISHOMA Ba'da Magrib":[
+  "Bindamping mengarahkan peserta untuk istirahat, sholat, dan makan malam.",
+  "Bindamping menyiapkan peserta mengikuti malam selamat datang dan pagelaran seni.",
+  "Panitia memastikan masjid/musala dan MCK tersedia."
+ ],
+ "Malam Cikal - Pagelaran Seni":[
+  "Bindamping mengatur anggota mengikuti lomba atau penampilan seni.",
+  "Bindamping terus berkoordinasi dengan panitia, Bankam, dan Bankes.",
+  "Bankam memantau area perkemahan dan berkeliling tenda.",
+  "Bankes memastikan petugas selalu siap di posko kesehatan.",
+  "Panitia memastikan penerangan, panggung, sound system, dan sarana pendukung siap."
+ ],
+ "Jam Malam":[
+  "Bindamping memastikan seluruh peserta berada di tenda, melakukan evaluasi harian, dan menyiapkan kegiatan esok hari.",
+  "Bankam menjalankan tugas sisir tenda.",
+  "Bankes memastikan petugas selalu siap di posko kesehatan.",
+  "Panitia berkoordinasi dengan Bankam dan Bankes."
+ ],
+ "Tim A - Lomba Cerdas Tangkas Pramuka":[
+  "Bindamping memilih peserta yang layak dan memberikan pembekalan materi.",
+  "Panitia menyiapkan lokasi, aturan, dewan juri, dan soal yang terverifikasi.",
+  "Materi Penggalang: 75% kepramukaan dan 25% pengetahuan umum; Penegak: 25% kepramukaan dan 75% pengetahuan umum."
+ ],
+ "Tim B - Games in My Camp":[
+  "Bindamping memilih, mengutus, dan memberikan pembekalan kepada peserta lomba.",
+  "Panitia menyiapkan lokasi, perlengkapan, dan seluruh kebutuhan lomba.",
+  "Permainan dilaksanakan berkelompok untuk melatih interaksi, gotong royong, harmonisasi, dan kerja tim."
+ ],
+ "Tim C - Pembelajaran Sinematografi":[
+  "Bindamping memilih dan mengutus peserta mengikuti pembelajaran.",
+  "Pemateri menyiapkan materi dan berkoordinasi dengan panitia.",
+  "Panitia menyiapkan tempat, sound system, dan proyektor bila diperlukan.",
+  "Peserta mengikuti edukasi dan praktik hingga menghasilkan karya pendek berkelompok."
+ ],
+ "Tim A - Sosialisasi Kebencanaan":[
+  "Bindamping memilih dan mengutus peserta mengikuti sosialisasi.",
+  "BPBD menyiapkan pemateri dan materi serta berkoordinasi dengan panitia.",
+  "Panitia menyiapkan tempat, sound system, dan proyektor bila diperlukan.",
+  "Materi meliputi identifikasi risiko, kesiapsiagaan, mitigasi, tanda peringatan, jalur evakuasi, titik kumpul, perlengkapan siaga bencana, komunikasi darurat, dan tindakan setelah bencana."
+ ],
+ "Tim B - Sosialisasi Narkotika":[
+  "Bindamping memilih dan mengutus peserta mengikuti sosialisasi.",
+  "Pemateri menyiapkan materi dan berkoordinasi dengan panitia.",
+  "Panitia menyiapkan tempat, sound system, dan proyektor bila diperlukan.",
+  "Peserta mengikuti edukasi bahaya narkotika dan pencegahannya."
+ ],
+ "Tim C - Sosialisasi HIV dan AIDS":[
+  "Bindamping memilih dan mengutus peserta mengikuti sosialisasi.",
+  "Dinas Kesehatan menyiapkan pemateri dan materi serta berkoordinasi dengan panitia.",
+  "Panitia menyiapkan tempat, sound system, dan proyektor bila diperlukan.",
+  "Materi meliputi pengenalan HIV/AIDS, penularan dan pencegahan, hidup sehat, informasi yang benar, pengurangan stigma, dan tanya jawab."
+ ],
+ "Tim D - Sosialisasi Bahaya Balapan Liar":[
+  "Bindamping memilih dan mengutus peserta mengikuti sosialisasi.",
+  "Dirlantas/Polres/Polsek menyiapkan pemateri dan materi serta berkoordinasi dengan panitia.",
+  "Panitia menyiapkan tempat, sound system, dan proyektor bila diperlukan.",
+  "Materi meliputi tertib lalu lintas, dampak kecelakaan, atribut berkendara standar, rambu jalan, dan sanksi pelanggaran."
+ ],
+ "Tim 1 - Kunjungan Pabrik Kelapa Sawit":[
+  "Bindamping memilih dan mengutus peserta mengikuti kunjungan.",
+  "Pihak perusahaan menyiapkan kunjungan dan memberikan edukasi melalui penjelasan serta tanya jawab.",
+  "Panitia menyiapkan tempat dan berkoordinasi dengan pihak perusahaan."
+ ],
+ "Tim 2 - Pengolahan Sagu Modern":[
+  "Bindamping memilih dan mengutus peserta mengikuti kunjungan.",
+  "Pihak pengelola menyiapkan kunjungan dan memberikan edukasi melalui penjelasan serta tanya jawab.",
+  "Panitia menyiapkan tempat dan berkoordinasi dengan pihak pengelola."
+ ],
+ "Tim 3 - Rumah Adat Tolaki":[
+  "Bindamping memilih dan mengutus peserta mengikuti kunjungan.",
+  "Pihak pengelola menyiapkan kunjungan dan memberikan edukasi melalui penjelasan serta tanya jawab.",
+  "Panitia menyiapkan tempat dan berkoordinasi dengan pihak pengelola."
+ ],
+ "Pengukuhan Pengurus Kwarran":[
+  "Pengurus Kwarran Wawotobi, Anggaberi, Meluhu, dan Amonggedo berkumpul 20 menit sebelum pelantikan untuk gladi kotor.",
+  "Kwarcab melaksanakan gladi dan berkoordinasi dengan pengurus Kwarran.",
+  "Panitia membantu dan berkoordinasi dengan Kwarcab dan Dewan Kerja Cabang.",
+  "Seluruh peserta pengukuhan hadir sebelum acara dimulai; teknis diatur Kwartir Cabang Konawe."
+ ],
+ "Temu Tokoh":[
+  "Bindamping bersama peserta menuju titik kumpul.",
+  "Panitia mempersiapkan pelaksanaan temu tokoh dan narasumber."
+ ],
+ "Malam Penutupan":[
+  "Bindamping dan peserta mengikuti seluruh rangkaian acara malam penutupan.",
+  "Bindamping berkoordinasi dengan panitia, Bankam, dan Bankes.",
+  "Bankam memantau seluruh area perkemahan dan berkeliling tenda.",
+  "Bankes memastikan petugas siap di posko kesehatan.",
+  "Panitia memastikan penerangan, panggung, sound system, dan sarana pendukung berjalan."
+ ],
+ "Penanaman Pohon":[
+  "Bindamping mengarahkan perwakilan peserta didik menuju titik kumpul.",
+  "Panitia menyiapkan transportasi, lokasi, dan bibit serta berkoordinasi dengan seksi terkait.",
+  "Kegiatan diikuti peserta, pendamping, dan panitia di Lapangan Lasandara/alun-alun Kecamatan Wawotobi."
+ ],
+ "Upacara Penutupan":[
+  "Seluruh peserta, bindamping, undangan, dan panitia mengikuti upacara penutupan.",
+  "Panitia mengatur rangkaian penutupan dan pelepasan kontingen; ikuti arahan sampai selesai."
+ ]
+};
+
+const bekal = {
+  pribadi:["Seragam pramuka lengkap","Kaos lapangan 3 buah","Celana lapangan","Jaket hangat","Pakaian dalam secukupnya","Hasduk & ring","Topi atau baret","Sepatu lapangan + sandal","Alat mandi","Handuk","Alat sholat / ibadah","Matras","Sleeping bag atau selimut","Ponco atau jas hujan","Senter + baterai cadangan","Alat makan & minum","Botol air 1,5 liter","Obat pribadi (serahkan catatan ke pos kesehatan)","Alat tulis","Buku saku ini"],
+  regu:["Tenda + pasak + tali","Tongkat pramuka 8 buah","Tali pramuka per orang","Terpal alas","Kompor lapangan + bahan bakar","Alat masak & bahan makanan","Kotak P3K regu","Bendera regu & tunggul","Kompas","Bendera semaphore","Sapu lidi & kantong sampah","Kantong pakaian kotor","Kartu nilai regu","Cangkul kecil untuk parit"],
+  larangan:["Senjata tajam di luar peralatan kegiatan","Rokok dan vape untuk semua golongan","Perhiasan dan uang berlebihan","Alat elektronik hiburan untuk Siaga dan Penggalang","Meninggalkan bumi perkemahan tanpa izin tertulis pembina"]
+};
+
+const tatatertib = [
+ "Peserta wajib mengikuti seluruh rangkaian kegiatan sesuai golongannya, kecuali ada rekomendasi pos kesehatan.",
+ "Seragam pramuka lengkap dipakai pada upacara pembukaan dan penutupan; kaos lapangan untuk giat harian.",
+ "Peserta tidak keluar dari bumi perkemahan tanpa izin tertulis pembina pendamping.",
+ "Kunjungan orang tua hanya di jam kunjung dan di area sekretariat, bukan di kavling.",
+ "Jam malam pukul 22.00. Setelah itu tidak ada aktivitas di luar kavling kecuali petugas jaga.",
+ "Putra dan putri menggunakan zona kavling dan MCK yang terpisah tanpa pengecualian.",
+ "Api hanya dinyalakan di sudut dapur dan lapangan api unggun, selalu ada penunggu.",
+ "Sampah dipilah organik dan anorganik; membakar sampah dilarang.",
+ "Peserta sakit wajib lapor pos kesehatan, tidak menahan diri demi ikut lomba.",
+ "Barang berharga menjadi tanggung jawab masing-masing; titipkan ke pembina bila perlu.",
+ "Pelanggaran berat dikembalikan ke kwaran asal melalui koordinasi pinkon dan panitia."
+];
+
+const sandiCepat = [
+ ["Satu peluit panjang","Berkumpul di lapangan utama"],
+ ["Dua peluit panjang","Siap di kavling masing-masing"],
+ ["Tiga peluit pendek","Keadaan darurat, menuju titik kumpul"],
+ ["Peluit panjang berulang","Perpindahan pos / pergantian sesi"],
+ ["Bendera kuning di sekretariat","Kegiatan lapangan ditunda, cuaca buruk"],
+ ["Lampu tenda panitia menyala terang","Pos kesehatan sedang menangani, jangan dikerumuni"]
+];
+
+
+const picLookup = (nama)=> picMap[nama] || null;
+
+const HALAMAN = [
+  {id:"sampul", label:"Sampul"},
+  {id:"tema", label:"Tema & Maskot"},
+  {id:"foto", label:"Leaderboard"},
+  {id:"kepanitiaan", label:"Kepanitiaan"},
+  {id:"bekal", label:"Bekal & Aturan"},
+  {id:"hari3", label:"Registrasi"},
+  {id:"hari0", label:"Jumat 25 Sep"},
+  {id:"hari1", label:"Sabtu 26 Sep"},
+  {id:"hari2", label:"Minggu 27 Sep"}
+];
+let halIdx = 0;
+let golAktif = "semua", kataCari = "";
+const KUNCI = "perkemahan4kwaran.v2";
+const KUNCI_HALAMAN = "perkemahan4kwaran.halaman.v2";
+try{
+  const tersimpan = Number(localStorage.getItem(KUNCI_HALAMAN));
+  if(Number.isInteger(tersimpan) && tersimpan >= 0 && tersimpan < HALAMAN.length) halIdx = tersimpan;
+}catch(e){}
+function simpanHalaman(){ try{ localStorage.setItem(KUNCI_HALAMAN, String(halIdx)); }catch(e){} }
+const slugSesi = t => t.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
+const idSesi = (dayIdx, s) => dayIdx+"-"+(s.id || slugSesi(s.n));
+const NARASI_TEKS = {
+  sampul:"Selamat datang di Buku Saku Perkemahan Gabungan, Pengukuhan dan Pelantikan Pengurus Kwartir Ranting Wawotobi, Anggaberi, Meluhu, dan Amonggedo. Buku ini memuat jadwal, petunjuk kegiatan, informasi panitia, serta pengumuman terbaru selama perkemahan. Pilih menu di bawah untuk melanjutkan.",
+  tema:"Halaman Tema dan Maskot. Semangat kegiatan dirangkum dalam semboyan Satyaku Kudarmakan, Darmaku Kubaktikan, serta Ikhlas Bakti Bina Bangsa, Budi Pekerti Luhur. Maskot Kak Sam membawa karakter I SAM: Ikhlas, Setia, Amanah, dan Mandiri.",
+  foto:"Halaman Galery menampilkan foto pimpinan, ketua kwartir ranting, dan panitia pelaksana. Gunakan halaman ini untuk mengenali tokoh-tokoh yang mendukung pelaksanaan perkemahan.",
+  kepanitiaan:"Halaman Kepanitiaan berisi susunan panitia pelaksana, mulai dari pelindung dan penanggung jawab, panitia inti, hingga seksi-seksi kegiatan. Gunakan daftar ini untuk mengetahui pembagian tugas dan koordinasi selama perkemahan.",
+  bekal:"Halaman Bekal dan Aturan memuat perlengkapan pribadi, perlengkapan regu, ketentuan perkemahan, tanda bunyi dan isyarat, serta panduan keselamatan. Periksa setiap daftar sebelum berangkat dan ikuti arahan pembina serta panitia.",
+  hari3:"Halaman Registrasi. Registrasi online berlangsung pada tanggal dua puluh sampai dua puluh empat September dua ribu dua puluh enam. Kegiatan penerimaan peserta dan pertemuan pembina berlangsung pada tanggal dua puluh empat September. Pastikan data peserta, perlengkapan, dan kehadiran sudah dikonfirmasi.",
+  hari0:"Jumat dua puluh lima September adalah hari pertama kegiatan. Ikuti jadwal mulai dari giat pribadi, senam kebugaran, apel pagi, upacara, ishoma, seremoni pembukaan, hingga pagelaran seni. Baca catatan setiap sesi dan perhatikan pengumuman terbaru dari panitia.",
+  hari1:"Sabtu dua puluh enam September adalah hari kedua kegiatan. Ikuti seluruh sesi sesuai waktu dan lokasi, jaga kekompakan regu, dan pastikan setiap peserta memahami petunjuk teknis, perlengkapan yang dibawa, serta pembagian golongan masing-masing.",
+  hari2:"Minggu dua puluh tujuh September adalah hari ketiga kegiatan. Selesaikan rangkaian acara, ikuti pengarahan penutupan, rapikan kavling, dan pastikan seluruh anggota serta barang bawaan tercatat sebelum meninggalkan lokasi perkemahan."
+};
+const NARASI_AUDIO = Object.fromEntries(Object.keys(NARASI_TEKS).map(id=>[id,`narasi/${id}.mp3`]));
+let narasiAudio = null;
+let narasiSuara = null;
+let suaraIndonesia = null;
+let audioSudahDiaktifkan = false;
+let narasiAktif = true;
+function pilihSuaraIndonesia(){
+  if(!("speechSynthesis" in window)) return;
+  const suara = speechSynthesis.getVoices();
+  suaraIndonesia = suara.find(v=>/^id(-|_)/i.test(v.lang)) || suara.find(v=>/indones/i.test(v.name)) || null;
+}
+if("speechSynthesis" in window){ pilihSuaraIndonesia(); speechSynthesis.addEventListener("voiceschanged", pilihSuaraIndonesia); }
+function perbaruiKontrolAudio(){
+  const bn = document.getElementById("btnNarasi");
+  if(bn){ bn.setAttribute("aria-pressed", String(narasiAktif)); bn.textContent = narasiAktif ? "◉ Narasi ON" : "◉ Narasi OFF"; bn.setAttribute("aria-label", narasiAktif ? "Matikan narasi" : "Nyalakan narasi"); }
+}
+function putarNarasi(){
+  const file = NARASI_AUDIO[HALAMAN[halIdx].id];
+  const teks = NARASI_TEKS[HALAMAN[halIdx].id];
+  if(!narasiAktif) return;
+  if(narasiAudio) { narasiAudio.pause(); narasiAudio.currentTime = 0; }
+  speechSynthesis.cancel();
+  if(file){
+    narasiAudio = new Audio(file);
+    narasiAudio.volume = .95;
+    narasiAudio.play().then(()=>{ audioSudahDiaktifkan = true; }).catch(()=>{ if(teks && ("speechSynthesis" in window)) putarNarasiTeks(teks); });
+    return;
+  }
+  if(teks) putarNarasiTeks(teks);
+}
+function hentikanNarasi(){
+  if(narasiAudio){ narasiAudio.pause(); narasiAudio.currentTime = 0; }
+  if("speechSynthesis" in window) speechSynthesis.cancel();
+}
+function putarNarasiTeks(teks){
+  if(!("speechSynthesis" in window)) return;
+  speechSynthesis.cancel();
+  narasiSuara = new SpeechSynthesisUtterance(teks);
+  narasiSuara.lang = "id-ID";
+  if(suaraIndonesia) narasiSuara.voice = suaraIndonesia;
+  narasiSuara.rate = .94;
+  narasiSuara.pitch = 1;
+  narasiSuara.volume = 1;
+  narasiSuara.onstart = ()=>{ audioSudahDiaktifkan = true; };
+  speechSynthesis.speak(narasiSuara);
+}
+function aktifkanAudioSekali(){
+  if(audioSudahDiaktifkan) return;
+  audioSudahDiaktifkan = true;
+  putarNarasi();
+}
+function aktivasiAudioPertama(e){
+  if(e.target.closest && e.target.closest('.audio-tombol')) return;
+  aktifkanAudioSekali();
+  window.removeEventListener('pointerdown', aktivasiAudioPertama);
+}
+window.addEventListener('pointerdown', aktivasiAudioPertama, {passive:true});
+document.getElementById("btnNarasi").onclick = ()=>{
+  // Sentuhan pertama pada HP harus menjadi izin audio, bukan mematikannya.
+  if(!audioSudahDiaktifkan){
+    narasiAktif = true;
+    putarNarasi();
+    perbaruiKontrolAudio();
+    return;
+  }
+  narasiAktif = !narasiAktif;
+  if(narasiAktif){ putarNarasi(); }
+  else { if(narasiAudio){ narasiAudio.pause(); narasiAudio.currentTime = 0; } if("speechSynthesis" in window) speechSynthesis.cancel(); }
+  perbaruiKontrolAudio();
+};
+// Bilah kontrol ditampilkan sebagai navigasi di bagian bawah halaman.
+const bilahNavigasi = document.querySelector(".bilah-atas");
+const footerHalaman = document.querySelector("footer");
+if(bilahNavigasi && footerHalaman) document.body.insertBefore(bilahNavigasi, footerHalaman);
+
+perbaruiKontrolAudio();
+let tandai = {};
+try{ tandai = JSON.parse(localStorage.getItem(KUNCI) || "{}"); }catch(e){ tandai = {}; }
+function simpan(){
+  try{ localStorage.setItem(KUNCI, JSON.stringify(tandai)); }
+  catch(e){ document.getElementById("catatanSimpan").textContent = "Centang tidak bisa disimpan di perangkat ini, tapi tetap berfungsi selama halaman terbuka."; }
+}
+
+document.getElementById("btnMerek").onclick = ()=> pindah(0, halIdx>0?"mundur":"maju");
+const daftarHalaman = document.getElementById("daftarHalaman");
+HALAMAN.forEach((h,i)=>{
+  const tombol = document.createElement("button");
+  tombol.type = "button";
+  tombol.className = "tombol-halaman";
+  tombol.textContent = h.label;
+  tombol.setAttribute("aria-label", "Buka halaman " + h.label);
+  tombol.onclick = ()=>{
+    if(i !== halIdx) pindah(i, i>halIdx?"maju":"mundur");
+  };
+  daftarHalaman.appendChild(tombol);
+});
+document.getElementById("cetak").onclick = ()=>{ siapkanCetak(); window.print(); };
+document.getElementById("reset").onclick = ()=>{
+  if(!confirm("Hapus semua centang sesi dan bekal?")) return;
+  tandai = {}; simpan(); render();
+};
+
+/* geser (swipe) di panggung */
+const panggung = document.getElementById("panggung");
+let geserX = null, geserY = null;
+panggung.addEventListener("touchstart", e=>{
+  geserX = e.touches[0].clientX; geserY = e.touches[0].clientY;
+}, {passive:true});
+panggung.addEventListener("touchend", e=>{
+  if(geserX===null) return;
+  const dx = e.changedTouches[0].clientX - geserX;
+  const dy = e.changedTouches[0].clientY - geserY;
+  geserX = null;
+  if(Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)*1.3){
+    if(dx < 0 && halIdx < HALAMAN.length-1) pindah(halIdx+1,"maju");
+    else if(dx > 0 && halIdx > 0) pindah(halIdx-1,"mundur");
+  }
+}, {passive:true});
+
+let sedangAnimasi = false;
+function pindah(idxBaru, arah){
+  if(sedangAnimasi || idxBaru===halIdx) return;
+  const kurangGerak = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const panggung = document.getElementById("panggung");
+  const lembar = document.getElementById("lembar");
+
+  if(kurangGerak){
+    halIdx = idxBaru;
+    simpanHalaman();
+    render();
+    return;
+  }
+
+  sedangAnimasi = true;
+  const tinggiLama = lembar.offsetHeight;
+
+  // salin tampilan lembar saat ini sebagai lapisan yang akan "dibalik"
+  const overlay = document.createElement("div");
+  overlay.className = "lembar-overlay";
+  overlay.style.height = tinggiLama + "px";
+  overlay.innerHTML = lembar.innerHTML;
+  overlay.querySelectorAll("[id]").forEach(el=>el.removeAttribute("id"));
+  panggung.appendChild(overlay);
+
+  // kunci tinggi panggung sesaat, lalu tuntun ke tinggi halaman baru
+  panggung.style.height = tinggiLama + "px";
+  panggung.style.transition = "height .38s cubic-bezier(.22,.61,.36,1)";
+
+  // render konten baru di lapisan dasar, sudah menunggu di balik lembaran yang berputar
+  halIdx = idxBaru;
+  simpanHalaman();
+  render();
+
+  requestAnimationFrame(()=>{
+    const tinggiBaru = lembar.offsetHeight;
+    panggung.style.height = tinggiBaru + "px";
+    overlay.classList.add(arah==="maju" ? "putar-maju" : "putar-mundur");
+  });
+
+  overlay.addEventListener("transitionend", function selesai(e){
+    if(e.propertyName !== "transform") return;
+    overlay.removeEventListener("transitionend", selesai);
+    overlay.remove();
+    panggung.style.transition = "";
+    panggung.style.height = "";
+    sedangAnimasi = false;
+  });
+}
+
+
+function cocok(s){
+  const g = golAktif==="semua" || s.g.includes(golAktif);
+  if(!g) return false;
+  if(!kataCari) return true;
+  const teks = (s.n+" "+s.t+" "+s.langkah.join(" ")+" "+s.bawa.join(" ")+" "+s.kunci).toLowerCase();
+  return teks.includes(kataCari);
+}
+
+function bukaDenah(){
+  const idxBekal = HALAMAN.findIndex(h=>h.id==="bekal");
+  pindah(idxBekal, idxBekal>halIdx?"maju":"mundur");
+  setTimeout(()=>{
+    document.getElementById("denah-lokasi")?.scrollIntoView({behavior:"smooth", block:"start"});
+  }, 380);
+}
+
+function render(){
+  sembunyikanToast();
+  hentikanNarasi();
+  const nama = HALAMAN[halIdx].id;
+  document.getElementById("lembar").className = "lembar halaman-"+nama;
+  daftarHalaman.querySelectorAll(".tombol-halaman").forEach((tombol,i)=>{
+    tombol.classList.toggle("aktif", i===halIdx);
+    tombol.setAttribute("aria-current", i===halIdx ? "page" : "false");
+  });
+
+  const lembar = document.getElementById("lembar");
+
+  if(nama==="sampul"){
+    lembar.innerHTML = htmlSampul();
+    putarNarasi();
+    return;
+  }
+  if(nama==="kepanitiaan"){
+    lembar.innerHTML = htmlBanner()+htmlPengumuman()+htmlKepanitiaan();
+    renderPengumuman();
+    putarNarasi();
+    return;
+  }
+  if(nama==="tema"){
+    lembar.innerHTML = htmlBanner()+htmlPengumuman()+htmlTemaMaskot();
+    renderPengumuman();
+    putarNarasi();
+    return;
+  }
+  if(nama==="foto"){
+    lembar.innerHTML = htmlBanner()+htmlPengumuman()+htmlFoto();
+    renderPengumuman();
+    putarNarasi();
+    return;
+  }
+  if(nama==="penutup"){
+    lembar.innerHTML = htmlBanner()+htmlPengumuman()+htmlPenutup();
+    renderPengumuman();
+    putarNarasi();
+    return;
+  }
+  if(nama==="bekal"){
+    lembar.innerHTML = htmlBanner()+htmlPengumuman()+`<div class="halaman-tatib"><div class="bungkus"><div class="panel">${bekalHTML()}</div></div></div>`;
+    renderPengumuman();
+    pasangCentangBekal();
+    putarNarasi();
+    return;
+  }
+
+  const dayIdx = ({hari3:0,hari0:1,hari1:2,hari2:3})[nama];
+  const h = jadwal[dayIdx];
+  lembar.innerHTML = htmlBanner()+htmlPengumuman()+` 
+    <div class="subkendali">
+      <div class="bungkus">
+        <div class="pilih-gol">
+          <span class="pilih-label">Tampilkan jadwal untuk golongan</span>
+          <div class="gol-tombol" id="saring" role="group" aria-label="Pilih golongan">
+            <button class="gtombol" data-gol="semua" aria-pressed="${golAktif==='semua'}">Semua</button>
+            <button class="gtombol gt-siaga" data-gol="siaga" aria-pressed="${golAktif==='siaga'}">Siaga</button>
+            <button class="gtombol gt-penggalang" data-gol="penggalang" aria-pressed="${golAktif==='penggalang'}">Penggalang</button>
+            <button class="gtombol gt-penegak" data-gol="penegak" aria-pressed="${golAktif==='penegak'}">Penegak</button>
+            <button class="gtombol gt-pandega" data-gol="pandega" aria-pressed="${golAktif==='pandega'}">Pandega</button>
+          </div>
+        </div>
+        <input class="cari" id="cari" type="search" placeholder="Cari kegiatan, misal: semaphore" aria-label="Cari kegiatan" value="${kataCari}">
+      </div>
+    </div>
+    <main class="bungkus">
+      <h1 class="judul-hal">${h.hari === "Registrasi" ? "Registrasi" : `${h.hari} — Kegiatan`}<small>${h.hari === "Registrasi" ? "Registrasi Online: 20–24 September 2026<br>Kegiatan: Kamis, 24 September 2026" : h.tanggal}</small></h1>
+      <div class="info-sumber" id="infoSumber" hidden></div>
+      <div id="progresKotak" class="progres" hidden>
+        <div class="bar"><div class="isi" id="progresIsi"></div></div>
+        <span id="progresTeks">0 dari 0 sesi</span>
+      </div>
+      <div class="lini" id="lini"></div>
+    </main>`;
+  renderPengumuman();
+
+  document.querySelectorAll("#saring .gtombol").forEach(c=>{
+    c.onclick = ()=>{
+      golAktif = c.dataset.gol;
+      document.querySelectorAll("#saring .gtombol").forEach(x=>x.setAttribute("aria-pressed", String(x===c)));
+      isiLini(dayIdx);
+    };
+  });
+  document.getElementById("cari").oninput = e=>{ kataCari = e.target.value.toLowerCase().trim(); isiLini(dayIdx); };
+
+  isiLini(dayIdx);
+  putarNarasi();
+}
+
+function isiLini(dayIdx){
+  perbaruiInfoSumber();
+  const h = jadwal[dayIdx];
+  const lini = document.getElementById("lini");
+  const pk = document.getElementById("progresKotak");
+  const tampil = h.sesi.filter(cocok);
+  lini.innerHTML = "";
+
+  if(!tampil.length){
+    pk.hidden = true;
+    lini.innerHTML = `<p class="kosong">Tidak ada sesi yang cocok pada hari ini. Coba ganti golongan atau kosongkan kolom pencarian.</p>`;
+    return;
+  }
+
+  tampil.forEach((s,idx)=>{
+    const id = idSesi(dayIdx, s);
+    const ok = !!tandai[id];
+    const el = document.createElement("div");
+    el.className = "sesi" + (ok?" tandai":"") + (s.status==="dibatalkan"?" st-dibatalkan":"");
+    el.innerHTML = `
+      <div class="jam">${s.j}<small>${s.d}</small></div>
+      <details class="kartu">
+        <summary>
+          <span class="judul"><span class="jt">${s.n}</span>${lencanaStatus(s)}${s.catatan ? `<span class="catatan-sesi"><b>Catatan panitia</b>${s.catatan}</span>` : ""}</span>
+          <span class="tanda" aria-hidden="true">+</span>
+        </summary>
+        <div class="badan">
+          <h4>Rincian kegiatan</h4>
+          <div class="rincian">
+            <div><b>Peserta</b><span>${s.pesertaText || pesertaText(s.g)}</span></div>
+            <div><b>Waktu</b><span>${s.j} WIB · durasi ${s.d}</span></div>
+            <div><b>Lokasi</b><span>${s.t} <button type="button" class="tautan-denah">lihat di denah →</button></span></div>
+            <div><b>Pakaian</b><span>${s.pakaian || "Sesuai ketentuan panitia"}</span></div>
+            <div><b>PIC Panitia</b><span>${s.pic || "-"}</span></div>
+            <div><b>Anggota</b><span>${s.anggota || "DKR Wawotobi"}</span></div>
+          </div>
+          <h4>Petunjuk &amp; Uraian</h4>
+          <div class="petunjuk-teknis">
+            <div class="label-teknis">Petunjuk</div>
+            <ol>${(s.petunjuk && s.petunjuk.length ? s.petunjuk : (petunjukKegiatan[s.n] || [])).map(l=>`<li>${l}</li>`).join("")}</ol>
+            <div class="label-teknis">Uraian</div>
+            <div class="uraian-teks">${s.langkah.map(l=>`<p>${l}</p>`).join("")}</div>
+          </div>
+          <h4>Yang dibawa</h4>
+          <div class="bawaan">${s.bawa.map(b=>`<span>${b}</span>`).join("")}</div>
+          <div class="kunci"><b>Perhatikan.</b> ${s.kunci}</div>
+          <label class="selesai">
+            <input type="checkbox" data-id="${id}" ${ok?"checked":""}>
+            Sesi ini sudah dijalani
+          </label>
+        </div>
+      </details>`;
+    lini.appendChild(el);
+    el.querySelector(".tautan-denah").onclick = bukaDenah;
+    const detail = el.querySelector("details.kartu");
+    detail.addEventListener("toggle", ()=>{
+      if(!detail.open) return;
+      lini.querySelectorAll("details.kartu[open]").forEach(other=>{
+        if(other !== detail) other.open = false;
+      });
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        detail.querySelector("summary")?.scrollIntoView({block:"start", behavior:"smooth"});
+      }));
+    });
+  });
+
+  lini.querySelectorAll("input[type=checkbox]").forEach(cb=>{
+    cb.onchange = ()=>{
+      tandai[cb.dataset.id] = cb.checked;
+      if(!cb.checked) delete tandai[cb.dataset.id];
+      simpan();
+      cb.closest(".sesi").classList.toggle("tandai", cb.checked);
+      hitungProgres(tampil, dayIdx);
+    };
+  });
+  pk.hidden = false;
+  hitungProgres(tampil, dayIdx);
+}
+
+function hitungProgres(tampil, dayIdx){
+  const total = tampil.length;
+  let sudah = 0;
+  tampil.forEach(s=>{ if(tandai[idSesi(dayIdx, s)]) sudah++; });
+  const warna = {semua:"var(--api)", siaga:"#3E8F4E", penggalang:"#D62828", penegak:"#F2C300", pandega:"#5A3A24"};
+  document.getElementById("progresIsi").style.background = warna[golAktif] || "var(--api)";
+  document.getElementById("progresIsi").style.width = total? (sudah/total*100)+"%" : "0%";
+  document.getElementById("progresTeks").textContent = sudah+" dari "+total+" sesi";
+}
+
+function baris(judul, arr, kunciAwal){
+  return `<div class="daftar">` + arr.map((x,i)=>{
+    const id = kunciAwal+"-"+i;
+    return `<label><input type="checkbox" data-id="${id}" ${tandai[id]?"checked":""}><span>${x}</span></label>`;
+  }).join("") + `</div>`;
+}
+
+function bekalHTML(){
+  return `
+    <h2>Bekal pribadi</h2>
+    <p class="sub">Centang saat sudah masuk tas. Daftar ini berlaku untuk ketiga golongan; Siaga cukup sampai nomor perlengkapan dasar dan selebihnya dibantu pembina.</p>
+    ${baris("pribadi", bekal.pribadi, "bekal-p")}
+
+    <h2>Perlengkapan regu</h2>
+    <p class="sub">Dibawa bersama, bukan perorangan. Bagi tugas di rapat regu sebelum berangkat.</p>
+    ${baris("regu", bekal.regu, "bekal-r")}
+
+    <h2>Tidak boleh dibawa</h2>
+    <ul class="aturan">${bekal.larangan.map(x=>`<li>${x}</li>`).join("")}</ul>
+
+    <h2>Tata tertib perkemahan</h2>
+    <p class="sub">Berlaku sejak kontingen masuk gerbang sampai dilepas kembali ke kwaran masing-masing.</p>
+    <ul class="aturan">${tatatertib.map(x=>`<li>${x}</li>`).join("")}</ul>
+
+    <h2>Denah bumi perkemahan</h2>
+    <p class="sub">Titik kumpul darurat ada di lapangan utama, tepat di tiang bendera.</p>
+    <div class="denah" id="denah-lokasi">
+      <div><b>Gerbang</b>Registrasi &amp; parkir</div>
+      <div><b>Sekretariat</b>Berkas &amp; izin keluar</div>
+      <div class="lapangan"><b>Lapangan utama</b>Upacara &amp; titik kumpul</div>
+      <div><b>Zona Siaga</b>Dekat pembina</div>
+      <div><b>Kavling Penggalang</b>Kwaran I &amp; II</div>
+      <div><b>Kavling Penegak</b>Kwaran III &amp; IV</div>
+      <div class="api-u"><b>Lapangan api unggun</b>Sisi timur</div>
+      <div><b>Pos kesehatan</b>Buka 24 jam</div>
+      <div><b>Dapur umum</b>Konsumsi Siaga</div>
+      <div><b>MCK putra</b>Sisi utara</div>
+      <div><b>MCK putri</b>Sisi selatan</div>
+    </div>
+
+    <h2>Hubungi siapa</h2>
+    <p class="sub">Simpan nomor ini di ponsel pembina pendamping dan penghubung regu.</p>
+    <div class="kontak">
+      <div><b>Ketua panitia</b><span>Keputusan kegiatan &amp; perubahan jadwal</span></div>
+      <div><b>Sekretariat</b><span>Berkas, izin keluar, barang hilang</span></div>
+      <div><b>Pos kesehatan</b><span>Sakit, cedera, obat — buka 24 jam</span></div>
+      <div><b>Koordinator giat</b><span>Teknis pos, lomba, dan penilaian</span></div>
+      <div><b>Keamanan</b><span>Jaga malam &amp; keadaan darurat</span></div>
+      <div><b>Pinkon tiap kwaran</b><span>Urusan kontingen masing-masing</span></div>
+    </div>
+    <p class="sub" style="margin-top:14px">Isi nomor kontak panitia sebelum booklet dibagikan ke peserta.</p>
+  `;
+}
+
+function pasangCentangBekal(){
+  document.querySelectorAll(".panel input[type=checkbox]").forEach(cb=>{
+    cb.onchange = ()=>{
+      tandai[cb.dataset.id] = cb.checked;
+      if(!cb.checked) delete tandai[cb.dataset.id];
+      simpan();
+    };
+  });
+}
+
+function logoSVG(w,h){
+  return `<svg width="${w}" height="${h}" viewBox="0 0 100 140" aria-hidden="true"><path d="M65.76,10.02 C65.04,8.96 63.91,11.27 63.72,16.15 C63.53,21.02 64.63,35.30 64.63,39.27 C64.63,43.24 64.02,40.03 63.72,39.95 C63.42,39.88 63.45,40.86 62.81,38.82 C62.17,36.78 60.69,29.98 59.86,27.71 C59.03,25.44 58.54,24.05 57.82,25.22 C57.10,26.39 56.09,31.19 55.56,34.74 C55.03,38.29 54.35,43.17 54.65,46.53 C54.95,49.89 54.91,49.10 57.37,54.92 C59.83,60.74 67.27,75.74 69.39,81.45 C71.51,87.16 70.11,87.27 70.07,89.16 C70.03,91.05 69.54,92.03 69.16,92.79 C68.78,93.55 69.01,94.87 67.80,93.70 C66.59,92.53 63.90,87.88 61.90,85.76 C59.90,83.64 57.63,82.02 55.78,81.00 C53.93,79.98 53.09,79.87 50.79,79.64 C48.48,79.41 44.44,79.38 41.95,79.64 C39.46,79.90 38.02,80.28 35.83,81.22 C33.64,82.16 30.88,83.80 28.80,85.31 C26.72,86.82 25.40,88.10 23.36,90.29 C21.32,92.48 16.44,94.75 16.55,98.46 C16.66,102.16 22.11,109.42 24.04,112.52 C25.97,115.62 26.53,115.69 28.12,117.05 C29.71,118.41 31.33,119.74 33.56,120.68 C35.79,121.62 38.93,122.38 41.50,122.72 C44.07,123.06 46.75,122.91 48.98,122.72 C51.21,122.53 52.84,122.31 54.88,121.59 C56.92,120.87 59.37,119.92 61.22,118.41 C63.07,116.90 64.85,113.73 65.99,112.52 C67.12,111.31 67.05,109.57 68.03,111.16 C69.01,112.75 70.86,119.77 71.88,122.04 C72.90,124.31 73.32,124.12 74.15,124.76 C74.98,125.40 76.27,125.86 76.87,125.90 C77.48,125.94 77.67,125.48 77.78,124.99 C77.89,124.50 78.27,124.61 77.55,122.95 C76.83,121.29 74.53,117.77 73.47,115.01 C72.41,112.25 71.50,108.24 71.20,106.39 C70.90,104.54 71.05,104.96 71.66,103.90 C72.27,102.84 74.08,101.22 74.83,100.05 C75.58,98.88 75.96,98.27 76.19,96.87 C76.42,95.47 76.76,95.06 76.19,91.66 C75.62,88.26 73.36,80.20 72.79,76.46 C72.22,72.72 72.15,73.55 72.79,69.21 C73.43,64.86 76.00,54.32 76.64,50.39 C77.28,46.46 77.02,47.81 76.64,45.62 C76.26,43.43 75.81,41.08 74.38,37.23 C72.94,33.38 69.47,27.02 68.03,22.49 C66.59,17.95 66.48,11.08 65.76,10.02 Z" fill="#E09512"/></svg>`;
+}
+
+function htmlBanner(){
+  return `<div class="banner-kegiatan"><img src="banner-kegiatan.webp" alt="Perkemahan Gabungan dan Pengukuhan Pengurus Kwartir Ranting"></div>`;
+}
+
+function htmlPengumuman(){
+  return `<div class="pengumuman-luar" id="pengumuman" hidden></div>`;
+}
+
+function htmlSampul(){
+  return `
+  <section class="halgelap">
+    <div class="hal-isi">
+      <div class="lambang"><img src="logo-perkemahan-gabungan.jpeg" alt="Logo Perkemahan Gabungan Kwartir Ranting" /></div>
+      <div class="eyebrow-p">GERAKAN PRAMUKA</div>
+      <h1 class="judul-kegiatan">Buku Saku<br>Perkemahan Gabungan<br><span>Pengukuhan &amp; Pelantikan Pengurus<br>Kwartir Ranting Wawotobi, Anggaberi,<br>Meluhu dan Amonggedo</span></h1>
+      <p class="tagline">Buku ini sebagai petunjuk kegiatan selama perkemahan gabungan berlangsung. Informasi dan pengumuman selama kegiatan akan tampil dalam buku ini. Setiap sesi punya petunjuk dan catatan penting. Pilih menu kegiatan di bawah untuk melanjutkan.</p>
+      <div class="info-acara">
+        <div><small>Waktu</small><b>25–27 September 2026</b></div>
+        <div><small>Tempat</small><b>Wawotobi</b></div>
+        <div><small>Diikuti oleh</small><b>Wawotobi · Meluhu · Anggaberi · Amonggedo</b></div>
+        <div><small>Tema</small><b>“Satyaku Kudarmakan, Darmaku Kubaktikan”<br>“Ikhlas Bakti Bina Bangsa, Budi Pekerti Luhur”</b></div>
+      </div>
+      <div class="qr-akses"><img src="qrcode-booklet-perkemahan.png" alt="QR code akses booklet online" /><span>Pindai untuk membuka booklet online</span></div>
+    </div>
+    <div class="dasadarma">
+      <div class="dasadarma-bungkus">
+        <h2>Dasa Darma Pramuka</h2>
+        <ol>
+          <li>Takwa kepada Tuhan Yang Maha Esa</li>
+          <li>Cinta alam dan kasih sayang sesama manusia</li>
+          <li>Patriot yang sopan dan kesatria</li>
+          <li>Patuh dan suka bermusyawarah</li>
+          <li>Rela menolong dan tabah</li>
+          <li>Rajin, terampil, dan gembira</li>
+          <li>Hemat, cermat, dan bersahaja</li>
+          <li>Disiplin, berani, dan setia</li>
+          <li>Bertanggung jawab dan dapat dipercaya</li>
+          <li>Suci dalam pikiran, perkataan, dan perbuatan</li>
+        </ol>
+      </div>
+    </div>
+  </section>`;
+}
+
+function htmlRegistrasi(){
+  return `
+  <section class="halaman-registrasi">
+    <div class="registrasi-panel">
+      <h1>Registrasi Peserta</h1>
+      <p class="tanggal">Selasa, 20 September 2026</p>
+      <div class="registrasi-kartu">
+        <h3>Registrasi kedatangan</h3>
+        <p>Peserta melakukan registrasi dan pemeriksaan administrasi sebelum mengikuti rangkaian perkemahan.</p>
+      </div>
+      <div class="registrasi-kartu">
+        <h3>Yang perlu disiapkan</h3>
+        <ul>
+          <li>Data peserta dan surat tugas dari pangkalan.</li>
+          <li>Identitas peserta serta daftar anggota regu atau kontingen.</li>
+          <li>Perlengkapan perkemahan yang telah diberi tanda nama.</li>
+        </ul>
+      </div>
+      <div class="registrasi-kartu">
+        <h3>Setelah registrasi</h3>
+        <p>Ikuti arahan panitia menuju lokasi kavling dan simak pengumuman terbaru di booklet ini.</p>
+      </div>
+    </div>
+  </section>`;
+}
+
+function htmlTemaMaskot(){
+  return `
+  <section class="halaman-tema">
+    <div class="tema-panel">
+      <h1>Tema &amp; Maskot</h1>
+      <p class="tanggal">Identitas dan semangat Perkemahan Gabungan Tahun 2026</p>
+
+      <div class="tema-hero">
+        <div class="tema-hero-copy">
+          <p class="tema-eyebrow">Tema perkemahan</p>
+          <h2><span class="semboyan-line">“SATYAKU KUDARMAKAN, DARMAKU KUBAKTIKAN”</span><span class="semboyan-line">“IKHLAS BAKTI BINA BANGSA BUDI PEKERTI LUHUR”</span></h2>
+          <p>Tema ini menjadi pengingat untuk melayani dengan tulus, menjaga persatuan, dan membawa sikap baik dalam setiap kegiatan perkemahan.</p>
+        </div>
+        <div class="tema-hero-art"><img src="maskot-pramuka-cutout.webp" alt="Kak Sam, maskot Perkemahan Gabungan" decoding="async"></div>
+      </div>
+
+      <div class="tema-grid">
+        <article class="tema-card sam-card">
+          <h3>Kak Sam — Karakter I SAM = Ikhlas, Setia, Amanah, Mandiri</h3>
+          <p>Kak Sam adalah kakak bagi adik-adik dan sahabat bagi teman. Ia mengajarkan kesetiaan, menjaga amanah, serta hidup mandiri.</p>
+          <div class="sam-list">
+            <div><b>I — Ikhlas</b>Ikhlas bakti tanpa pamrih. Pramuka berbuat bukan karena ingin dipuji, tapi karena tulus ingin mengabdi. Ini jiwa Dasa Darma pertama — takwa.</div>
+            <div><b>S — Setia</b>Setia kepada Tuhan, Negara, Pancasila, dan Dasa Darma Pramuka. Pramuka tidak pernah ingkar janji.</div>
+            <div><b>A — Amanah</b>Dapat dipercaya, bertanggung jawab, dan tulus mengemban tugas. Jika diberi tugas, dilaksanakan sampai tuntas.</div>
+            <div><b>M — Mandiri</b>Tidak manja, tidak cengeng, mampu berdiri sendiri, kreatif, dan siap menolong sesama.</div>
+          </div>
+        </article>
+        <article class="tema-card">
+          <h3>Makna maskot</h3>
+          <p>Memiliki makna persatuan dari 4 Kwartir Ranting Wawotobi, Anggaberi, Meluhu, dan Amonggedo yang merupakan komoditas besar dan unggul dalam pertanian sawit. Sedangkan buah padi adalah identitas besar bagi masyarakat Kwarcab Konawe sebagai wilayah pertanian penghasil beras. Semua ini menjadi satu kesatuan yang tidak terpisahkan dan digenggam erat oleh Kwartir Daerah Sulawesi Tenggara yang dikenal sebagai Bumi Anoa dengan simbol tanduk tegak lurus ke atas.</p>
+        </article>
+      </div>
+    </div>
+  </section>`;
+}
+
+function htmlFoto(){
+  const skala = teks => Math.min(1, 27 / Math.max(20, teks.length));
+  const kartu = (src, alt, namaJabatan) => {
+    const [nama, jabatan] = namaJabatan.split(" — ");
+    return `<figure class="foto-item"><img src="${src}" alt="${alt}" loading="lazy"><figcaption><span class="foto-nama" style="font-size:.62rem;transform:scaleX(${skala(nama)})">${nama}</span><span class="foto-jabatan" style="font-size:.62rem;transform:scaleX(${skala(jabatan)})">${jabatan}</span></figcaption></figure>`;
+  };
+  return `
+  <section class="halaman-foto">
+    <div class="foto-panel">
+      <h1>Galery</h1>
+      <p class="tanggal">Dokumentasi tokoh pendukung dan panitia Perkemahan Gabungan Tahun 2026</p>
+      <div class="foto-grid foto-grid-dokumen">
+        ${kartu("foto/foto-1.jpg","Yusran Akbar","YUSRAN AKBAR, ST — KETUA MABICAB KONAWE")}
+        ${kartu("foto/foto-5.jpg","H. Samsul Ibrahim","H. SYAMSUL IBRAHIM, SE. MSI — KETUA KWARCAB KONAWE")}
+        ${kartu("foto/foto-9.jpeg","Edy Sardan","EDY SARDAN, ST — KETUA MABIRAN WAWOTOBI")}
+        ${kartu("foto/foto-8.jpeg","Suriani","SURIANI, S.SOS — KETUA MABIRAN ANGGABERI")}
+        ${kartu("foto/foto-7.jpeg","Dr. Indrawan Tobasi","DR. INDRAWAN TOBASI, S.SOS., M.SI — KETUA MABIRAN MELUHU")}
+        ${kartu("foto/foto-6.jpeg","Suriadin","SURIADIN, SE — KETUA MABIRAN AMONGGEDO")}
+        ${kartu("foto/foto-2.jpeg","Hj. Samsia","HJ. SAMSIA, SE — KETUA KWARRAN WAWOTOBI")}
+        ${kartu("foto/foto-12.jpeg","Elnia A.P.","ELNIA A.P., S.PD., M.PD — KETUA KWARRAN ANGGABERI")}
+        ${kartu("foto/foto-11.jpeg","Hasin","HASIN, S.PD., M.PD — KETUA KWARRAN MELUHU")}
+        ${kartu("foto/foto-10.jpeg","Muh. Sahab","MUH. SAHAB, S.SOS — KETUA KWARRAN AMONGGEDO")}
+        ${kartu("foto/rustam-tabara.webp","Rustam Tabara","RUSTAM TABARA, S. AP — KETUA PANITIA")}
+        ${kartu("foto/foto-4.jpeg","Muh. Syakarman","MUH. SYAKARMAN, S.PDI., M.PD — SEKRETARIS")}
+      </div>
+    </div>
+  </section>`;
+}
+
+function htmlKepanitiaan(){
+  const seksi = (judul, koordinator, anggota) => `
+    <details class="struktur-kelompok">
+      <summary>${judul}</summary>
+      <ul><li><b>Koordinator:</b> ${koordinator}</li>${anggota.map(n=>`<li>${n}</li>`).join("")}</ul>
+    </details>`;
+  return `
+  <section class="halaman-kepanitiaan">
+    <div class="kepanitiaan-panel">
+      <h1>Susunan Panitia Pelaksana</h1>
+      <p class="tanggal">Perkemahan dalam rangka Pengukuhan dan Pelantikan Pengurus Kwartir Ranting Wawotobi, Meluhu, Anggaberi, dan Amonggedo — Tahun 2026</p>
+
+      <div class="struktur-int struktur-pimpinan">
+        <div><b>Pelindung / Penasihat</b>Ketua Mabiran Wawotobi<br>Ketua Mabiran Meluhu<br>Ketua Mabiran Anggaberi<br>Ketua Mabiran Amonggedo</div>
+        <div><b>Penanggung Jawab</b>Ketua Kwartir Ranting Wawotobi<br>Ketua Kwartir Ranting Meluhu<br>Ketua Kwartir Ranting Anggaberi<br>Ketua Kwartir Ranting Amonggedo</div>
+      </div>
+
+      <details class="struktur-kelompok panitia-inti" open>
+        <summary>Panitia Pelaksana — Panitia Inti</summary>
+        <ul>
+          <li><b>Ketua Umum</b><i>:</i><span>Rustam Tabara, S.AP</span></li>
+          <li><b>Wakil Ketua 1</b><i>:</i><span>Firdaus Pagala, S.Ag</span></li>
+          <li><b>Wakil Ketua 2</b><i>:</i><span>Kasim Lawogo, S.Pd</span></li>
+          <li><b>Sekretaris Umum</b><i>:</i><span>Muh. Syakarman, S.Pd.I, M.Pd</span></li>
+          <li><b>Wakil Sekretaris 1</b><i>:</i><span>Epiyanti, S.Pd</span></li>
+          <li><b>Wakil Sekretaris 2</b><i>:</i><span>Vida Evi Lestari, S.Pd</span></li>
+          <li><b>Wakil Sekretaris 3</b><i>:</i><span>Ramadan, S.Pd, M.Si.</span></li>
+          <li><b>Bendahara Umum</b><i>:</i><span>Putri Idarni, S.Pd</span></li>
+          <li class="anggota-int"><b>Anggota</b><i>:</i><span>Darmiati, S.Pd<br>Ruha, S.Pd.Gr<br>Rosmaini, S.Pd</span></li>
+        </ul>
+      </details>
+
+      ${seksi("Seksi Kesekretariatan", "Juhriatin, S.Pd.", ["Tasripin, S.Pd, M.Pd","Manan Darmawan, S.Kom","Siti Fatimah, S.Pd","Habil Malaka, S.Pd, M.Pd","Indah Purnamasari, S.Pd","Al-Khalik, S.Pd","Muh. Fazlur Rahman Bintang Tabara, SH","Julianti, S.Pd"])}
+      ${seksi("Seksi Acara, Pelantikan, dan Protokoler", "Sudarmin, S.Pd, M.Pd", ["Agus Yuwono, S.Pd, M.Pd.","Mawarni, S.Pd, M.Pd","Syamsidar","Iwan, S.PdI","Iron Maulana","Hasdar, S.Pd","Muh. Amin Sabri, S.Pd","Ex Officio Kwarcab"])}
+      ${seksi("Seksi Kegiatan", "Juniwanto, S.Ag", ["Alpian, S.Pd","Sunarmin, S.Pd, M.Pd","Misratin, S.Pd, M.Pd","Rosmiyatin, S.Pd, M.Pd","Mustamar Robinson, SH","Hendra Bayu","Ali Qadri","Jiansyah, S.Sos","Benyamin, S.Pd., M.Hum."])}
+      ${seksi("Seksi Perkemahan", "Porkas, S.Pd", ["Asmada","Arman, S.Pd","Sidrat Ali Imran, S.Pd","Juhartono Saputra, S.Pd","Syahmujur Bachri, S.Pd","Sanggoleo, S.Pd","Tengku Abdul Haris, S.Pd.","Isa Ansari, S.Pd.","Yusuf Kamaluddin, S.Sos"])}
+      ${seksi("Seksi Perlengkapan, Transportasi dan Akomodasi", "Sudarmin, SE", ["Muh. Jamil, S.Pd.Gr","Sahirman, S.Pd, M.Pd","Muhamad Surya Putra, S.H.","Egusrin, S.Pd., M.Pd.","Diaz Adi Putra, S.Pd","Nasruddin, S.Pd","Sahir, S.Pd.","Ivan Prasetya, S.Pd.","Supriman Adiyaksa, S.Pd"])}
+      ${seksi("Seksi Konsumsi", "Yayu Rahayu, SE, MM", ["Limanti, SE, M.Pd","Astri Ekawaty, S.Pd","Sogiawan, SE","Sulasni, S.Pd","Weriatin, S.Pd","Septian Wulandari, S.Pd.","Siti Rajab, S.Pd","Suriyati, S.Pd","Tuti Sumanti, S.Sos, M.Si","Mariani, S.Pd.","Lili Suyatin, S.Sos","Misna","Arlina, S.Pd","Suhartina, S.Pd.","Jusnia, S.Pd, M.Pd.","Yanti, S.Pd., M.Pd.","Munasni, S.Pd"])}
+      ${seksi("Seksi Komunikasi dan Dokumentasi", "Helisman, S.Pd, M.Pd", ["Arminsyah, S.Pd","Ruslin Tobasari, S.Pd, M.Pd","Endang Trisnawati, S.Pd","Musrim, S.Ag","Iyan Andrian, S.Pd.","Bintang Purnama, S.Pd","Andi Rahman, S.Pd.","Aldi Apandi, S.Pd"])}
+      ${seksi("Seksi Kesehatan", "dr. Citra (Kapus Wawotobi)", ["Kapus Anggotoa","Kapus Anggaberi","Kapus Meluhu","Anggota Kapus Wawotobi","Anggota Kapus Anggotoa","Anggota Kapus Anggaberi","Anggota Kapus Meluhu"])}
+      ${seksi("Seksi Keamanan", "Danramil Wawotobi dan Kapolsek Wawotobi", ["Kamarudin, S.Pd","Jusmin, S.Pd","Apriansyah, S.Pd","Irnas Sabri, S.Pd","Udiman, S.Pd","Sadeli, S.Pd.","Abdul Rahman, S.Pd.","Saidin, S.Pd","Abdullah Aco","Udin Hamid"])}
+
+      <div class="struktur-int struktur-tanda">
+        <div><b>Ketua Panitia</b><span class="ruang-tanda"></span><strong>RUSTAM TABARA, S.AP</strong></div>
+        <div><b>Sekretaris</b><span class="ruang-tanda"></span><strong>MUH. SYAKARMAN, S.Pd.I, M.Pd</strong></div>
+        <div><b>Mengetahui</b><span class="ruang-tanda"></span><strong>H. SYAMSUL IBRAHIM, SE., M.Si.</strong><span>Ketua Kwartir Cabang Gerakan Pramuka Konawe</span></div>
+      </div>
+    </div>
+  </section>`;
+}
+
+function htmlPenutup(){
+  return `
+  <section class="halgelap">
+    <div class="hal-isi">
+      <div class="lambang">${logoSVG(30,42)}</div>
+      <div class="eyebrow-p">SELESAI SUDAH TIGA HARI BERSAMA</div>
+      <h2>Sampai Jumpa di Perkemahan Berikutnya</h2>
+      <p class="tagline">Terima kasih sudah menjaga semangat, kekompakan, dan Dasa Darma selama perkemahan. Bawa pulang bukan hanya tenda dan tas, tapi juga kawan baru dari empat kwartir ranting.</p>
+    </div>
+    <div class="hal-blok">
+      <div class="hal-blok-bungkus">
+        <h3>Sebelum pulang, pastikan</h3>
+        <ul class="aturan-gelap">
+          <li>Seluruh anggota regu dan barung hadir dan tercatat sebelum naik kendaraan.</li>
+          <li>Barang pribadi dan perlengkapan regu sudah lengkap, tidak ada yang tertinggal di tenda.</li>
+          <li>Kartu serah terima lahan sudah ditandatangani pembina kavling.</li>
+          <li>Sampah sudah dibuang ke titik akhir dan kavling dalam keadaan bersih.</li>
+          <li>Piagam, tiska, atau penghargaan sudah diterima dari sekretariat.</li>
+        </ul>
+        <h3>Terima kasih kepada</h3>
+        <div class="terimakasih">
+          <span>Kwaran I</span><span>Kwaran II</span><span>Kwaran III</span><span>Kwaran IV</span>
+          <span>Panitia penyelenggara</span><span>Seluruh pembina pendamping</span>
+        </div>
+      </div>
+    </div>
+    <div class="ttd">
+      <p>Perkemahan Bersama Empat Kwartir Ranting</p>
+      <div class="garis-ttd">Ketua Panitia</div>
+      <p class="nama-ttd">( Isi nama &amp; tanda tangan )</p>
+    </div>
+  </section>`;
+}
+
+function sesiCetakHTML(s, dayIdx){
+  return `
+    <div class="sesi" style="page-break-inside:avoid;margin-bottom:14px;border-bottom:1px solid #ccc;padding-bottom:10px">
+      <div style="font-family:'Zilla Slab',serif;font-weight:700;font-size:1.05rem">${s.j} · ${s.n}${s.status && s.status!=="normal" ? ` [${LABEL_STATUS[s.status]}]` : ""} <span style="font-weight:400;font-size:.8rem">(${s.d})</span></div>
+      <div style="font-size:.85rem;margin:4px 0 6px">Peserta: ${pesertaText(s.g)} — Lokasi: ${s.t}${picTeks(s) ? ` — PIC: ${picTeks(s)}` : ""}</div>
+      <div style="font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#47704e;margin-top:5px">Petunjuk</div>
+      <ol style="margin:4px 0;padding-left:18px;font-size:.87rem">${(s.petunjuk || []).map(l=>`<li>${l}</li>`).join("")}</ol>
+      <div style="font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#47704e;margin-top:5px">Uraian</div>
+      ${s.langkah.map(l=>`<p>${l}</p>`).join("")}
+      ${s.catatan ? `<div style="font-size:.85rem"><b>Catatan:</b> ${s.catatan}</div>` : ""}
+      <div style="font-size:.85rem"><b>Dibawa:</b> ${s.bawa.join(", ")}</div>
+      <div style="font-size:.85rem;margin-top:3px"><b>Perhatikan:</b> ${s.kunci}</div>
+    </div>`;
+}
+
+function siapkanCetak(){
+  const el = document.getElementById("cetakLengkap");
+  let out = `<div class="cetak-halaman sampul-cetak"><img src="logo-perkemahan-gabungan.jpeg" alt="Logo kegiatan"><h1>Perkemahan Gabungan &amp; Pengukuhan Pengurus Kwartir Ranting</h1><p>Wawotobi · Meluhu · Anggaberi · Amonggedo<br>25–27 September 2026</p><p><b>Ikhlas Bakti Bina Bangsa<br>Berbudi Bawa Laksana</b></p></div>`;
+  out += `<div class="cetak-halaman"><h2>Tema &amp; Maskot</h2>${htmlTemaMaskot()}</div>`;
+  out += `<div class="cetak-halaman"><h2>Leaderboard</h2>${htmlFoto()}</div>`;
+  out += `<div class="cetak-halaman"><h2>Kepanitiaan</h2>${htmlKepanitiaan()}</div>`;
+  out += `<div class="cetak-halaman"><h2>Bekal &amp; Aturan</h2>${bekalHTML()}</div>`;
+  jadwal.forEach((h,dayIdx)=>{
+    let isi = `<div class="cetak-halaman"><h2>${h.hari === "Registrasi" ? "Kegiatan" : `${h.hari} — Kegiatan`} — ${h.tanggal}</h2>`;
+    h.sesi.forEach(s=>{ isi += sesiCetakHTML(s, dayIdx); });
+    isi += `</div>`;
+    out += isi;
+  });
+  el.innerHTML = out;
+}
+
+const LABEL_STATUS = {dipindah:"Dipindah", diundur:"Diundur", dimajukan:"Dimajukan", dibatalkan:"Dibatalkan"};
+const esc = t => String(t==null ? "" : t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const picTeks = s => s && s.pic ? s.pic : "";
+const lencanaStatus = s => (s.status && s.status!=="normal" && LABEL_STATUS[s.status]) ? ` <em class="status-sesi st-${s.status}">${LABEL_STATUS[s.status]}</em>` : "";
+const pengumuman = [];
+function renderPengumuman(){}
+function perbaruiInfoSumber(){}
+function sembunyikanToast(){}
+function tampilkanToast(){}
+
+render();
+if("serviceWorker" in navigator){
+  window.addEventListener("load", ()=>{
+    if(location.hostname === "localhost" || location.hostname === "127.0.0.1"){
+      // Saat pengembangan lokal, hindari cache PWA agar perubahan kode dan
+      // jadwal dapat diuji tanpa tertahan service worker lama.
+      navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{});
+      if(window.caches) caches.keys().then(ks=>ks.forEach(k=>caches.delete(k))).catch(()=>{});
+    } else {
+      navigator.serviceWorker.register("sw.js?rev=6").catch(()=>{});
+    }
+  });
+}
+</script>
+</body>
+</html>

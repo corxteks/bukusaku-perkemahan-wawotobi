@@ -1,0 +1,16 @@
+{
+  "name": "Buku Saku Perkemahan Gabungan",
+  "short_name": "Buku Saku Kwaran",
+  "description": "Buku saku digital Perkemahan Gabungan dan Pengukuhan Pengurus Kwartir Ranting.",
+  "lang": "id-ID",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#E8E3D1",
+  "theme_color": "#23301F",
+  "icons": [
+    { "src": "favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

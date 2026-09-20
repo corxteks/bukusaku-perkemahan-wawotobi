@@ -1,0 +1,18 @@
+/*.webp
+  Cache-Control: public, max-age=604800
+/*.jpg
+  Cache-Control: public, max-age=604800
+/*.jpeg
+  Cache-Control: public, max-age=604800
+/*.png
+  Cache-Control: public, max-age=604800
+/*.ico
+  Cache-Control: public, max-age=604800
+/*.mp3
+  Cache-Control: public, max-age=604800
+/foto/*
+  Cache-Control: public, max-age=604800
+/narasi/*
+  Cache-Control: public, max-age=604800
+/maskot-anoa-alpha.webm
+  Cache-Control: public, max-age=604800
