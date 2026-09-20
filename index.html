@@ -2550,6 +2550,8 @@ const picTeks = s => s && s.pic ? s.pic : "";
 const lencanaStatus = s => (s.status && s.status!=="normal" && LABEL_STATUS[s.status]) ? ` <em class="status-sesi st-${s.status}">${LABEL_STATUS[s.status]}</em>` : "";
 let pengumuman = [];
 let kunciPengumuman = "";
+let kunciJadwal = "";
+let toastTimer = null;
 function csvBaris(teks){
   const rows=[]; let row=[], cell="", quote=false;
   for(let i=0;i<teks.length;i++){const c=teks[i],n=teks[i+1]; if(c==='"'&&quote&&n==='"'){cell+='"';i++;continue} if(c==='"'){quote=!quote;continue} if(c===','&&!quote){row.push(cell);cell='';continue} if((c==='\n'||c==='\r')&&!quote){if(c==='\r'&&n==='\n')i++;row.push(cell);if(row.some(v=>v.trim()))rows.push(row);row=[];cell='';continue} cell+=c} if(cell||row.length){row.push(cell);rows.push(row)} return rows;
@@ -2564,6 +2566,7 @@ async function muatPengumumanSheet(){
     const berubah=kunciBaru!==kunciPengumuman;
     pengumuman=baru; kunciPengumuman=kunciBaru;
     renderPengumuman();
+    if(berubah && pengumuman.length) tampilkanToast("Pengumuman baru tersedia");
     if(berubah && pengumuman.length){
       requestAnimationFrame(()=>document.getElementById("pengumuman")?.scrollIntoView({behavior:"smooth",block:"start"}));
     }
@@ -2579,7 +2582,7 @@ async function muatJadwalSheet(){
     const data=rows.map(r=>Object.fromEntries(head.map((h,i)=>[h,(r[i]||"").trim()]))).filter(x=>!/^(tidak|no|false|0)$/i.test(x.tampil||""));
     const urut=["24","1","2","3"], nama=["Registrasi","Jumat 25 Sep","Sabtu 26 Sep","Minggu 27 Sep"];
     const baru=urut.map((hari,i)=>({hari:nama[i],tanggal:nama[i],sesi:data.filter(x=>String(x.hari).trim()===hari).map(x=>({j:x.waktu,n:x.kegiatan,g:golongan(x.golongan),t:x.lokasi||"-",status:x.status||"normal",catatan:x.catatan||"",pic:x.pic||"",cp:x.cp||"",bawa:daftar(x.bawa),petunjuk:daftar(x.petunjuk),langkah:daftar(x.langkah),perhatian:daftar(x.perhatian),durasi:x.durasi||""}))})).filter(x=>x.sesi.length);
-    if(baru.length){ jadwal=baru; render(); }
+    if(baru.length){ const kj=JSON.stringify(baru); const berubah=kj!==kunciJadwal; jadwal=baru; kunciJadwal=kj; render(); if(berubah && kunciJadwal!="") tampilkanToast("Jadwal kegiatan diperbarui"); }
   }catch(e){ console.warn("Google Sheets jadwal tidak tersedia; memakai jadwal lokal.",e); }
 }
 function renderPengumuman(){
@@ -2587,9 +2590,13 @@ function renderPengumuman(){
   if(!pengumuman.length){box.hidden=true;box.innerHTML="";return}
   box.innerHTML='<div class="pengumuman"><div class="pengumuman-isi"><p class="pengumuman-judul">Info terbaru</p>'+pengumuman.map(x=>`<p class="pengumuman-item ${/^(ya|yes|true|1)$/i.test(x.penting||"")?'penting':''}">${esc(x.teks)}<small>${esc(x.waktu)}</small></p>`).join('')+'</div><button class="pengumuman-tutup" type="button" onclick="this.closest(\'.pengumuman-luar\').hidden=true">Tutup</button></div>'; box.hidden=false;
 }
+function tampilkanToast(pesan="Pembaruan baru tersedia"){
+  const t=document.getElementById("toastJadwal"); if(!t) return;
+  const s=t.querySelector("span"); if(s) s.textContent=pesan;
+  t.hidden=false; clearTimeout(toastTimer); toastTimer=setTimeout(()=>{t.hidden=true},9000);
+}
 function perbaruiInfoSumber(){}
 function sembunyikanToast(){}
-function tampilkanToast(){}
 
 render();
 muatPengumumanSheet();
