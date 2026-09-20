@@ -2559,7 +2559,7 @@ async function muatPengumumanSheet(){
   try{
     const res=await fetch(url,{cache:"no-store"}); if(!res.ok) throw new Error("HTTP "+res.status);
     const rows=csvBaris(await res.text()); const head=(rows.shift()||[]).map(x=>x.trim().toLowerCase());
-    const baru=rows.map(r=>Object.fromEntries(head.map((h,i)=>[h,(r[i]||"").trim()]))).filter(x=>/^(ya|yes|true|1)$/i.test(x.aktif||""));
+    const baru=rows.map(r=>Object.fromEntries(head.map((h,i)=>[h,(r[i]||"").trim()]))).filter(x=>/^(ya|yes|true|1)$/i.test(x.aktif||"")).slice(0,5);
     const kunciBaru=JSON.stringify(baru);
     const berubah=kunciBaru!==kunciPengumuman;
     pengumuman=baru; kunciPengumuman=kunciBaru;
