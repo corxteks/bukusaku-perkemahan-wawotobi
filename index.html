@@ -388,8 +388,8 @@ details[open] summary .tanda{transform:rotate(45deg)}
 .tema-hero h2 .semboyan-line{display:block}
 .tema-hero h2 .semboyan-line+.semboyan-line{margin-top:14px}
 .tema-hero p{margin:13px 0 0;color:var(--tinta-2);line-height:1.6;max-width:58ch}
-.tema-hero-art{display:flex;justify-content:center;align-items:center;height:260px;min-height:0;position:relative}
-.tema-hero-art img,.tema-hero-art video{display:block;width:min(100%,370px);height:100%;max-height:420px;object-fit:contain;filter:drop-shadow(0 14px 14px rgba(35,43,27,.16));position:relative;margin:auto}
+.tema-hero-art{display:flex;justify-content:center;align-items:center;height:420px;min-height:0;position:relative}
+.tema-hero-art img,.tema-hero-art video{display:block;width:min(100%,460px);height:100%;max-height:460px;object-fit:contain;filter:drop-shadow(0 14px 14px rgba(35,43,27,.16));position:relative;margin:auto}
 .tema-hero-art img{animation:maskot-apung 3.8s ease-in-out infinite}
 @keyframes maskot-apung{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 .tema-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:18px}
@@ -400,7 +400,7 @@ details[open] summary .tanda{transform:rotate(45deg)}
 .sam-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px;margin-top:10px}
 .sam-list div{border-top:1px dashed var(--garis-kuat);padding-top:8px;color:var(--tinta-2);line-height:1.45}
 .sam-list b{display:block;color:var(--tinta);font:700 1rem "Zilla Slab",serif;margin-bottom:2px}
-@media (max-width:700px){.tema-panel{padding-left:14px;padding-right:14px}.tema-hero{grid-template-columns:1fr;padding:19px 18px 8px}.tema-hero-art{height:230px;order:-1}.tema-hero-art img,.tema-hero-art video{width:min(82%,300px);height:220px;max-height:220px;object-fit:contain}.tema-grid{grid-template-columns:1fr}.sam-list{grid-template-columns:1fr}}
+@media (max-width:700px){.tema-panel{padding-left:14px;padding-right:14px}.tema-hero{grid-template-columns:1fr;padding:19px 18px 8px}.tema-hero-art{height:350px;order:-1}.tema-hero-art img,.tema-hero-art video{width:min(96%,370px);height:340px;max-height:340px;object-fit:contain}.tema-grid{grid-template-columns:1fr}.sam-list{grid-template-columns:1fr}}
 .kepanitiaan-panel{max-width:860px;margin:0 auto;padding:28px 18px 44px}
 .kepanitiaan-panel h1{font-family:"Zilla Slab",Georgia,serif;color:var(--rumput);font-size:clamp(1.55rem,3.8vw,2.35rem);line-height:1.12;margin:0 0 6px}
 .kepanitiaan-panel .tanggal{color:var(--tinta-2);margin:0 0 22px;line-height:1.45}
@@ -1884,16 +1884,8 @@ const NARASI_TEKS = {
 };
 const NARASI_AUDIO = Object.fromEntries(Object.keys(NARASI_TEKS).map(id=>[id,`narasi/${id}.mp3`]));
 let narasiAudio = null;
-let narasiSuara = null;
-let suaraIndonesia = null;
 let audioSudahDiaktifkan = false;
 let narasiAktif = true;
-function pilihSuaraIndonesia(){
-  if(!("speechSynthesis" in window)) return;
-  const suara = speechSynthesis.getVoices();
-  suaraIndonesia = suara.find(v=>/^id(-|_)/i.test(v.lang)) || suara.find(v=>/indones/i.test(v.name)) || null;
-}
-if("speechSynthesis" in window){ pilihSuaraIndonesia(); speechSynthesis.addEventListener("voiceschanged", pilihSuaraIndonesia); }
 function perbaruiKontrolAudio(){
   const bn = document.getElementById("btnNarasi");
   if(bn){ bn.setAttribute("aria-pressed", String(narasiAktif)); bn.textContent = narasiAktif ? "◉ Narasi ON" : "◉ Narasi OFF"; bn.setAttribute("aria-label", narasiAktif ? "Matikan narasi" : "Nyalakan narasi"); }
@@ -1903,30 +1895,16 @@ function putarNarasi(){
   const teks = NARASI_TEKS[HALAMAN[halIdx].id];
   if(!narasiAktif) return;
   if(narasiAudio) { narasiAudio.pause(); narasiAudio.currentTime = 0; }
-  speechSynthesis.cancel();
   if(file){
     narasiAudio = new Audio(file);
     narasiAudio.volume = .95;
-    narasiAudio.play().then(()=>{ audioSudahDiaktifkan = true; }).catch(()=>{ if(teks && ("speechSynthesis" in window)) putarNarasiTeks(teks); });
+    narasiAudio.preload = "auto";
+    narasiAudio.play().then(()=>{ audioSudahDiaktifkan = true; }).catch(()=>{});
     return;
   }
-  if(teks) putarNarasiTeks(teks);
 }
 function hentikanNarasi(){
   if(narasiAudio){ narasiAudio.pause(); narasiAudio.currentTime = 0; }
-  if("speechSynthesis" in window) speechSynthesis.cancel();
-}
-function putarNarasiTeks(teks){
-  if(!("speechSynthesis" in window)) return;
-  speechSynthesis.cancel();
-  narasiSuara = new SpeechSynthesisUtterance(teks);
-  narasiSuara.lang = "id-ID";
-  if(suaraIndonesia) narasiSuara.voice = suaraIndonesia;
-  narasiSuara.rate = .94;
-  narasiSuara.pitch = 1;
-  narasiSuara.volume = 1;
-  narasiSuara.onstart = ()=>{ audioSudahDiaktifkan = true; };
-  speechSynthesis.speak(narasiSuara);
 }
 function aktifkanAudioSekali(){
   if(audioSudahDiaktifkan) return;
@@ -1949,7 +1927,7 @@ document.getElementById("btnNarasi").onclick = ()=>{
   }
   narasiAktif = !narasiAktif;
   if(narasiAktif){ putarNarasi(); }
-  else { if(narasiAudio){ narasiAudio.pause(); narasiAudio.currentTime = 0; } if("speechSynthesis" in window) speechSynthesis.cancel(); }
+  else { if(narasiAudio){ narasiAudio.pause(); narasiAudio.currentTime = 0; } }
   perbaruiKontrolAudio();
 };
 // Bilah kontrol ditampilkan sebagai navigasi di bagian bawah halaman.
