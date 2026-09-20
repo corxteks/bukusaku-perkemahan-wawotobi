@@ -2548,13 +2548,32 @@ const LABEL_STATUS = {dipindah:"Dipindah", diundur:"Diundur", dimajukan:"Dimajuk
 const esc = t => String(t==null ? "" : t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const picTeks = s => s && s.pic ? s.pic : "";
 const lencanaStatus = s => (s.status && s.status!=="normal" && LABEL_STATUS[s.status]) ? ` <em class="status-sesi st-${s.status}">${LABEL_STATUS[s.status]}</em>` : "";
-const pengumuman = [];
-function renderPengumuman(){}
+let pengumuman = [];
+function csvBaris(teks){
+  const rows=[]; let row=[], cell="", quote=false;
+  for(let i=0;i<teks.length;i++){const c=teks[i],n=teks[i+1]; if(c==='"'&&quote&&n==='"'){cell+='"';i++;continue} if(c==='"'){quote=!quote;continue} if(c===','&&!quote){row.push(cell);cell='';continue} if((c==='\n'||c==='\r')&&!quote){if(c==='\r'&&n==='\n')i++;row.push(cell);if(row.some(v=>v.trim()))rows.push(row);row=[];cell='';continue} cell+=c} if(cell||row.length){row.push(cell);rows.push(row)} return rows;
+}
+async function muatPengumumanSheet(){
+  const url=window.BUKU_SAKU?.sheets?.pengumuman; if(!url) return;
+  try{
+    const res=await fetch(url,{cache:"no-store"}); if(!res.ok) throw new Error("HTTP "+res.status);
+    const rows=csvBaris(await res.text()); const head=(rows.shift()||[]).map(x=>x.trim().toLowerCase());
+    pengumuman=rows.map(r=>Object.fromEntries(head.map((h,i)=>[h,(r[i]||"").trim()]))).filter(x=>/^(ya|yes|true|1)$/i.test(x.aktif||""));
+    renderPengumuman();
+  }catch(e){ console.warn("Google Sheets pengumuman tidak tersedia; memakai data lokal.",e); }
+}
+function renderPengumuman(){
+  const box=document.getElementById("pengumuman"); if(!box) return;
+  if(!pengumuman.length){box.hidden=true;box.innerHTML="";return}
+  box.innerHTML='<div class="pengumuman"><div class="pengumuman-isi"><p class="pengumuman-judul">Info terbaru</p>'+pengumuman.map(x=>`<p class="pengumuman-item ${/^(ya|yes|true|1)$/i.test(x.penting||"")?'penting':''}">${esc(x.teks)}<small>${esc(x.waktu)}</small></p>`).join('')+'</div><button class="pengumuman-tutup" type="button" onclick="this.closest(\'.pengumuman-luar\').hidden=true">Tutup</button></div>'; box.hidden=false;
+}
 function perbaruiInfoSumber(){}
 function sembunyikanToast(){}
 function tampilkanToast(){}
 
 render();
+muatPengumumanSheet();
+if(window.BUKU_SAKU?.pollingMs) setInterval(muatPengumumanSheet, window.BUKU_SAKU.pollingMs);
 if("serviceWorker" in navigator){
   window.addEventListener("load", ()=>{
     if(location.hostname === "localhost" || location.hostname === "127.0.0.1"){
