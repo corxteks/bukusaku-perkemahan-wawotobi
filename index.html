@@ -1870,10 +1870,8 @@ let halIdx = 0;
 let golAktif = "semua", kataCari = "";
 const KUNCI = "perkemahan4kwaran.v2";
 const KUNCI_HALAMAN = "perkemahan4kwaran.halaman.v2";
-try{
-  const tersimpan = Number(localStorage.getItem(KUNCI_HALAMAN));
-  if(Number.isInteger(tersimpan) && tersimpan >= 0 && tersimpan < HALAMAN.length) halIdx = tersimpan;
-}catch(e){}
+// Setiap pembukaan baru selalu dimulai dari halaman Sampul.
+// Posisi halaman hanya berubah selama sesi berjalan.
 function simpanHalaman(){ try{ localStorage.setItem(KUNCI_HALAMAN, String(halIdx)); }catch(e){} }
 const slugSesi = t => t.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
 const idSesi = (dayIdx, s) => dayIdx+"-"+(s.id || slugSesi(s.n));
