@@ -1897,16 +1897,11 @@ function perbaruiKontrolAudio(){
   if(bn){ bn.setAttribute("aria-pressed", String(narasiAktif)); bn.textContent = narasiAktif ? "◉ Narasi ON" : "◉ Narasi OFF"; bn.setAttribute("aria-label", narasiAktif ? "Matikan narasi" : "Nyalakan narasi"); }
 }
 function putarNarasi(){
+  const file = NARASI_AUDIO[HALAMAN[halIdx].id];
   const teks = NARASI_TEKS[HALAMAN[halIdx].id];
   if(!narasiAktif) return;
   if(narasiAudio) { narasiAudio.pause(); narasiAudio.currentTime = 0; }
-  if("speechSynthesis" in window && teks){
-    speechSynthesis.cancel();
-    const u=new SpeechSynthesisUtterance(teks);
-    u.lang="id-ID"; u.rate=.94; u.pitch=1; u.volume=1;
-    const pilihSuara=()=>{const vs=speechSynthesis.getVoices(); const v=vs.find(x=>/^id(-|_)/i.test(x.lang)); if(!v){tampilkanToast("Voice Bahasa Indonesia belum tersedia di perangkat"); return} u.voice=v; u.lang=v.lang; speechSynthesis.speak(u)};
-    if(speechSynthesis.getVoices().length) pilihSuara(); else speechSynthesis.onvoiceschanged=pilihSuara;
-  }
+  if(file){ narasiAudio=new Audio(file); narasiAudio.volume=.95; narasiAudio.preload="auto"; narasiAudio.play().then(()=>{audioSudahDiaktifkan=true}).catch(()=>{}); }
 }
 function hentikanNarasi(){
   if(narasiAudio){ narasiAudio.pause(); narasiAudio.currentTime = 0; }
