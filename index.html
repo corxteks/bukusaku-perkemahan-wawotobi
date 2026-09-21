@@ -1904,7 +1904,7 @@ function putarNarasi(){
     speechSynthesis.cancel();
     const u=new SpeechSynthesisUtterance(teks);
     u.lang="id-ID"; u.rate=.94; u.pitch=1; u.volume=1;
-    const pilihSuara=()=>{const vs=speechSynthesis.getVoices(); const v=vs.find(x=>/^id(-|_)/i.test(x.lang)); if(v) u.voice=v; speechSynthesis.speak(u)};
+    const pilihSuara=()=>{const vs=speechSynthesis.getVoices(); const v=vs.find(x=>/^id(-|_)/i.test(x.lang)); if(!v){tampilkanToast("Voice Bahasa Indonesia belum tersedia di perangkat"); return} u.voice=v; u.lang=v.lang; speechSynthesis.speak(u)};
     if(speechSynthesis.getVoices().length) pilihSuara(); else speechSynthesis.onvoiceschanged=pilihSuara;
   }
 }
